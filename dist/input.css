@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-animation {
+  display: inline-flex;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  animation: moveUp 0.5s forwards;
+  /* Apply animation delay to each letter */
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shadowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 15px 5px #a374d5;
+  }
+  50% {
+    box-shadow: 0 0 20px 10px #a374d5;
+  }
+}
+
+.animated-shadow {
+  animation: shadowPulse 3s infinite;
+}
+
+/* Animasi Fade-in */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+/* Animasi saat scroll */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
