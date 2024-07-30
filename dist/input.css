@@ -110,3 +110,67 @@
   margin-right: 0.5rem; /* Space between the circle and the text */
 }
 
+.hover\:move-right:hover .material-icons {
+  transform: translateX(5px);
+  transition: transform 0.2s;
+}
+
+/* Animasi warna bergerak */
+@keyframes gradientAnimation {
+  0% {
+    color: #00f;
+  }
+  50% {
+    color: #0f0;
+  }
+  100% {
+    color: #00f;
+  }
+}
+
+/* Style untuk teks dengan animasi warna bergerak */
+.animate-text {
+  animation: gradientAnimation 3s linear infinite;
+}
+
+/* Menyelaraskan elemen SVG dan teks */
+.flex.items-center svg {
+  margin-left: 0.5rem; /* Jarak antara teks dan ikon centang biru */
+  vertical-align: middle; /* Menjaga SVG sejajar dengan teks */
+}
+
+/* Memastikan teks dan ikon sejajar dengan baik */
+.flex.items-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Add this to your stylesheet or include in a <style> tag */
+
+/* Fix the height of the main container */
+#channelSidebar {
+  overflow-y: auto;
+}
+
+#serverSidebar {
+  overflow-y: auto;
+}
+
+/* Style the scrolling area for messages */
+.messages {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+/* Ensure the input area stays fixed at the bottom */
+.message-input {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f9f9f9;
+  border-top: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  z-index: 1000; /* Ensure it sits above other content */
+}

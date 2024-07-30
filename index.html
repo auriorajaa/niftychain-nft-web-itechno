@@ -114,7 +114,7 @@
                class="text-gray-900 bg-light-sand border-2 border-black hover:underline focus:outline-none font-light px-4 py-2 text-center text-base">Connect
                Wallet</button>
             <button data-collapse-toggle="navbar-cta" type="button"
-               class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-50 rounded-lg md:hidden hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-50"
+               class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-50 rounded-lg md:hidden"
                aria-controls="navbar-cta" aria-expanded="false">
                <span class="sr-only">Open main menu</span>
                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -360,229 +360,61 @@
             <!-- NFT Grid -->
             <div class="lg:block">
                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                  <div class="relative group hover:scale-105 transition-transform duration-300 ease-in-out transform">
-                     <img class="w-full h-48 object-cover shadow-lg animated-shadow"
+                  <!-- NFT 1 -->
+                  <div class="relative transform transition-transform duration-300 ease-in-out">
+                     <img class="w-full h-48 object-cover"
                         src="https://i.seadn.io/gcs/files/659194e9e41cf2aa161fdb2a9378d19a.png?auto=format&dpr=1&w=384"
-                        alt="NFT 1">
-                     <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-start p-4 text-white">
-                        <p class="text-lg font-semibold flex items-center">
-                           Beanz Official
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-
-                        <p class="text-lg font-semibold flex items-center">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 256 417"
-                              fill="currentColor">
-                              <path
-                                 d="M127.9 0l-7.9 27.5v266.1l7.9 7.9 127.9-72.9L127.9 0zM127.9 0L0 228.5l127.9 72.9V0zm0 298.3l-7.4 9v105.3l7.4 21.4 127.9-180.7-127.9 44.9zm0 0L0 253.3l127.9 180.7V298.3z" />
-                           </svg>
-                           1.2 ETH
-                        </p>
-                     </div>
+                        alt="NFT 1" id="nft1"
+                        data-images='["https://i.seadn.io/gcs/files/659194e9e41cf2aa161fdb2a9378d19a.png?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/3e6b8a0cf05e13d00a566b76ce8bfe97.png?auto=format&dpr=1&w=384"]'
+                        data-interval="2079">
                   </div>
-                  <div class="relative group hover:scale-105 transition-transform duration-300 ease-in-out transform">
-                     <img class="w-full h-48 object-cover shadow-lg animated-shadow"
-                        src="https://i.seadn.io/s/raw/files/fb2f8bd2d6258e7fbc532fadd73e0789.jpg?auto=format&dpr=1&w=384"
-                        alt="NFT 2">
-
-                     <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-start p-4 text-white">
-                        <p class="text-lg font-semibold flex items-center">
-                           Cryptomnesia
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-
-                        <p class="text-lg font-semibold flex items-center">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 256 417"
-                              fill="currentColor">
-                              <path
-                                 d="M127.9 0l-7.9 27.5v266.1l7.9 7.9 127.9-72.9L127.9 0zM127.9 0L0 228.5l127.9 72.9V0zm0 298.3l-7.4 9v105.3l7.4 21.4 127.9-180.7-127.9 44.9zm0 0L0 253.3l127.9 180.7V298.3z" />
-                           </svg>
-                           3.0 ETH
-                        </p>
-                     </div>
+                  <!-- NFT 2 -->
+                  <div class="relative transform transition-transform duration-300 ease-in-out">
+                     <img class="w-full h-48 object-cover"
+                        src="https://i.seadn.io/s/raw/files/ccca1c6af38e2f4fc28c3554baca907b.webp?auto=format&dpr=1&w=384"
+                        alt="NFT 2" id="nft2"
+                        data-images='["https://i.seadn.io/s/raw/files/ccca1c6af38e2f4fc28c3554baca907b.webp?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/7af8b383891bdc7d5b966d6ea23f4606.webp?auto=format&dpr=1&w=384"]'
+                        data-interval="3071">
                   </div>
-                  <div class="relative group hover:scale-105 transition-transform duration-300 ease-in-out transform">
-                     <img class="w-full h-48 object-cover shadow-lg animated-shadow"
-                        src="https://i.seadn.io/s/raw/files/603542364e2d0d4d48e64308af2b7f90.webp?auto=format&dpr=1&w=384"
-                        alt="NFT 3">
 
-                     <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-start p-4 text-white">
-                        <p class="text-lg font-semibold flex items-center">
-                           Mr Cattttty
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-
-                        <p class="text-lg font-semibold flex items-center">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 256 417"
-                              fill="currentColor">
-                              <path
-                                 d="M127.9 0l-7.9 27.5v266.1l7.9 7.9 127.9-72.9L127.9 0zM127.9 0L0 228.5l127.9 72.9V0zm0 298.3l-7.4 9v105.3l7.4 21.4 127.9-180.7-127.9 44.9zm0 0L0 253.3l127.9 180.7V298.3z" />
-                           </svg>
-                           0.2 ETH
-                        </p>
-                     </div>
+                  <!-- NFT 3 -->
+                  <div class="relative transform transition-transform duration-300 ease-in-out">
+                     <img class="w-full h-48 object-cover"
+                        src="https://i.seadn.io/s/raw/files/85c2cd8d532623a1a9dac05132c33b6e.png?auto=format&dpr=1&w=384"
+                        alt="NFT 3" id="nft3"
+                        data-images='["https://i.seadn.io/s/raw/files/85c2cd8d532623a1a9dac05132c33b6e.png?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/bfd3493ef2c99a3107bb495e130f6d65.png?auto=format&dpr=1&w=384"]'
+                        data-interval="1794">
                   </div>
-                  <div class="relative group hover:scale-105 transition-transform duration-300 ease-in-out transform">
-                     <img class="w-full h-48 object-cover shadow-lg animated-shadow"
-                        src="https://i.seadn.io/s/raw/files/fa55ecefe4ae4343401ac86442acaceb.png?auto=format&dpr=1&w=384"
-                        alt="NFT 4">
 
-                     <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-start p-4 text-white">
-                        <p class="text-lg font-semibold flex items-center">
-                           Bored Cap
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-
-                        <p class="text-lg font-semibold flex items-center">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 256 417"
-                              fill="currentColor">
-                              <path
-                                 d="M127.9 0l-7.9 27.5v266.1l7.9 7.9 127.9-72.9L127.9 0zM127.9 0L0 228.5l127.9 72.9V0zm0 298.3l-7.4 9v105.3l7.4 21.4 127.9-180.7-127.9 44.9zm0 0L0 253.3l127.9 180.7V298.3z" />
-                           </svg>
-                           1.4 ETH
-                        </p>
-                     </div>
+                  <!-- NFT 4 -->
+                  <div class="relative transform transition-transform duration-300 ease-in-out">
+                     <img class="w-full h-48 object-cover"
+                        src="https://i.seadn.io/gae/pnzcurLSWJe4MXw8yIWABWeh7-lKH0fpKn_UoGzsUjtzMNoX_1wQ1UjO5PgIWjx0rVnaQgevD5GxbgppjCsWPg8d5G0si_2PDQqIOw?auto=format&dpr=1&w=384"
+                        alt="NFT 4" id="nft4"
+                        data-images='["https://i.seadn.io/gae/pnzcurLSWJe4MXw8yIWABWeh7-lKH0fpKn_UoGzsUjtzMNoX_1wQ1UjO5PgIWjx0rVnaQgevD5GxbgppjCsWPg8d5G0si_2PDQqIOw?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/bfbeeadaba5c9db46a565aab7fcbe216.jpg?auto=format&dpr=1&w=384"]'
+                        data-interval="2142">
                   </div>
-                  <div class="relative group hover:scale-105 transition-transform duration-300 ease-in-out transform">
-                     <img class="w-full h-48 object-cover shadow-lg animated-shadow"
-                        src="https://i.seadn.io/s/raw/files/95376a62f3fd5a12315f375338c42790.jpg?auto=format&dpr=1&w=384"
-                        alt="NFT 5">
 
-                     <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-start p-4 text-white">
-                        <p class="text-lg font-semibold flex items-center">
-                           Cryptomnesia
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-
-                        <p class="text-lg font-semibold flex items-center">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 256 417"
-                              fill="currentColor">
-                              <path
-                                 d="M127.9 0l-7.9 27.5v266.1l7.9 7.9 127.9-72.9L127.9 0zM127.9 0L0 228.5l127.9 72.9V0zm0 298.3l-7.4 9v105.3l7.4 21.4 127.9-180.7-127.9 44.9zm0 0L0 253.3l127.9 180.7V298.3z" />
-                           </svg>
-                           2.2 ETH
-                        </p>
-                     </div>
+                  <!-- NFT 5 -->
+                  <div class="relative transform transition-transform duration-300 ease-in-out">
+                     <img class="w-full h-48 object-cover"
+                        src="https://i.seadn.io/gcs/files/54ccf1f0313fe56ac12f88ccda65e370.jpg?auto=format&dpr=1&w=384"
+                        alt="NFT 5" id="nft5"
+                        data-images='["https://i.seadn.io/gcs/files/54ccf1f0313fe56ac12f88ccda65e370.jpg?auto=format&dpr=1&w=384", "https://i.seadn.io/gae/j6vaFgKpmMZjrTHQ8wUn4zCYrjxFdHwUd_0UXA_eVq5N6pgqzyjj5NfT3Y9ujPsma_l6eviQEct-zS47Hv2cIXyJdw9fmf5KNYgr?auto=format&dpr=1&w=384"]'
+                        data-interval="2973">
                   </div>
-                  <div class="relative group hover:scale-105 transition-transform duration-300 ease-in-out transform">
-                     <img class="w-full h-48 object-cover shadow-lg animated-shadow"
-                        src="https://i.seadn.io/s/primary-drops/0x8d5b54aa1775216d22cf587507896b88c65cc9db/32861489:about:preview_media:2817033a-ab58-46bc-9f2c-5335528f1b52.png?auto=format&dpr=1&w=1920"
-                        alt="NFT 6">
 
-                     <div
-                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-start p-4 text-white">
-                        <p class="text-lg font-semibold flex items-center">
-                           RoboKidden
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-
-                        <p class="text-lg font-semibold flex items-center">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 256 417"
-                              fill="currentColor">
-                              <path
-                                 d="M127.9 0l-7.9 27.5v266.1l7.9 7.9 127.9-72.9L127.9 0zM127.9 0L0 228.5l127.9 72.9V0zm0 298.3l-7.4 9v105.3l7.4 21.4 127.9-180.7-127.9 44.9zm0 0L0 253.3l127.9 180.7V298.3z" />
-                           </svg>
-                           0.8 ETH
-                        </p>
-                     </div>
+                  <!-- NFT 6 -->
+                  <div class="relative transform transition-transform duration-300 ease-in-out">
+                     <img class="w-full h-48 object-cover"
+                        src="https://i.seadn.io/s/raw/files/901755549c35ab54824e57c4115dd694.png?auto=format&dpr=1&w=384"
+                        alt="NFT 6" id="nft6"
+                        data-images='["https://i.seadn.io/s/raw/files/901755549c35ab54824e57c4115dd694.png?auto=format&dpr=1&w=384", "https://i.seadn.io/gcs/files/c8902732a84c2a9323b2495aef9494f3.png?auto=format&dpr=1&w=384"]'
+                        data-interval="2666">
                   </div>
                </div>
             </div>
+
 
             <!-- Content -->
             <div class="mt-10 lg:mt-0">

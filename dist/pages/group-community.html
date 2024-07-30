@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>NiftyChain - Your Ultimate NFT Marketplace</title>
+
+   <!-- Favicon -->
+   <link rel="icon" href="/src/image/happy.jpg" type="image/x-icon">
+
+   <!-- Meta Tags for SEO -->
+   <meta name="description"
+      content="NiftyChain is your ultimate NFT marketplace. Discover, buy, and sell unique digital assets seamlessly. Created by Aurio Rajaa and Haikal Afifsyah.">
+   <meta name="keywords"
+      content="NFT, NFT Marketplace, Digital Assets, Blockchain, NiftyChain, Aurio Rajaa, Haikal Afifsyah">
+   <meta name="author" content="Aurio Rajaa, Haikal Afifsyah">
+
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://niftychain-nft-web-itechno.vercel.app/">
+   <meta property="og:title" content="NiftyChain - Your Ultimate NFT Marketplace">
+   <meta property="og:description"
+      content="NiftyChain is your ultimate NFT marketplace. Discover, buy, and sell unique digital assets seamlessly. Created by Aurio Rajaa and Haikal Afifsyah.">
+   <meta property="og:image" content="https://niftychain-nft-web-itechno.vercel.app/src/image/og-image.jpg">
+
+   <!-- Twitter -->
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://niftychain-nft-web-itechno.vercel.app/">
+   <meta property="twitter:title" content="NiftyChain - Your Ultimate NFT Marketplace">
+   <meta property="twitter:description"
+      content="NiftyChain is your ultimate NFT marketplace. Discover, buy, and sell unique digital assets seamlessly. Created by Aurio Rajaa and Haikal Afifsyah.">
+   <meta property="twitter:image" content="https://niftychain-nft-web-itechno.vercel.app/src/image/twitter-image.jpg">
+
+   <!-- Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css">
+   <link rel="stylesheet" href="/node_modules/flowbite/dist/flowbite.min.css">
+   <link rel="stylesheet" href="/dist/output.css">
+   <link rel="stylesheet" href="/dist/input.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+   <!-- Scripts -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <!-- Additional SEO Meta Tags -->
+   <meta name="robots" content="index, follow">
+   <meta name="language" content="English">
+   <meta name="revisit-after" content="7 days">
+   <meta name="distribution" content="global">
+   <meta name="rating" content="general">
+
+   <!-- Structured Data Markup for Rich Snippets -->
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "WebSite",
+         "url": "https://niftychain-nft-web-itechno.vercel.app/",
+         "name": "NiftyChain",
+         "description": "NiftyChain is your ultimate NFT marketplace. Discover, buy, and sell unique digital assets seamlessly. Created by Aurio Rajaa and Haikal Afifsyah.",
+         "creator": [
+            {
+               "@type": "Person",
+               "name": "Aurio Rajaa"
+            },
+            {
+               "@type": "Person",
+               "name": "Haikal Afifsyah"
+            }
+         ],
+         "image": "https://niftychain-nft-web-itechno.vercel.app/src/image/og-image.jpg"
+      }
+      </script>
+
+   <!-- Canonical Link -->
+   <link rel="canonical" href="https://niftychain-nft-web-itechno.vercel.app/">
+
+   <!-- Other Metadata -->
+   <meta property="og:locale" content="en_US">
+   <meta property="og:site_name" content="NiftyChain">
+</head>
+
+
+<body>
+   <!-- NAVBAR SECTION STARTED -->
+   <nav class="bg-purple-primary border-gray-200 sticky top-0 z-40">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 font-englebert">
+         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/src/image/happy.jpg" class="h-8" alt="NiftyChain Logo" />
+            <span class="self-center text-2xl font-extrabold text-light-sand whitespace-nowrap"><span
+                  class="text-animation">
+                  <span class="letter">N</span>
+                  <span class="letter">i</span>
+                  <span class="letter">f</span>
+                  <span class="letter">t</span>
+                  <span class="letter">y</span>
+                  <span class="letter">C</span>
+                  <span class="letter">h</span>
+                  <span class="letter">a</span>
+                  <span class="letter">i</span>
+                  <span class="letter">n</span>
+               </span>
+            </span>
+         </a>
+         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button"
+               class="flex items-center space-x-3 text-gray-900 bg-light-sand border-2 border-black hover:underline focus:outline-none font-light px-4 py-2 text-center text-base">
+               <span class="truncate">0x...</span>
+               <span class="font-medium">(2.34 ETH)</span>
+            </button>
+
+            <button data-collapse-toggle="navbar-cta" type="button"
+               class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-50 rounded-lg md:hidden"
+               aria-controls="navbar-cta" aria-expanded="false">
+               <span class="sr-only">Open main menu</span>
+               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                     d="M1 1h15M1 7h15M1 13h15" />
+               </svg>
+            </button>
+         </div>
+
+
+         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+            <ul
+               class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-lg">
+               <li>
+                  <a href="/index.html"
+                     class="block py-2 px-3 md:p-0 text-gray-900 hover:text-light-sand hover:underline"
+                     aria-current="page">Home</a>
+               </li>
+               <li>
+                  <a href="/dist/pages/discover.html"
+                     class="block py-2 px-3 md:p-0 text-gray-900 hover:text-light-sand hover:underline">Discover</a>
+               </li>
+               <li>
+                  <a href="#"
+                     class="block py-2 px-3 md:p-0 text-gray-900 hover:text-light-sand hover:underline">Profile</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+      <div id="coinmarketcap-widget-marquee" class="font-englebert" coins="1,1027,825,52,5426,74,5994" currency="USD"
+         theme="light" transparent="false" show-symbol-logo="true"></div>
+   </nav>
+   <!-- NAVBAR SECTION ENDED -->
+
+   <div class="flex flex-col h-screen font-englebert">
+      <!-- Navigation Bar -->
+      <nav class="bg-white shadow-md p-4 md:hidden">
+         <div class="flex justify-between items-center">
+            <button id="mobileMenuBtn" class="text-gray-500 hover:text-gray-700">
+               <span class="material-icons">menu</span>
+            </button>
+         </div>
+      </nav>
+
+      <!-- Main Container -->
+      <div class="flex flex-grow overflow-hidden">
+         <!-- Server Sidebar -->
+         <div id="serverSidebar"
+            class="hidden md:flex flex-shrink-0 w-20 bg-purple-primary flex-col items-center p-3 space-y-4">
+            <!-- Server icons -->
+            <div
+               class="w-12 h-12 bg-indigo-600 animated-border rounded-full flex items-center justify-center text-white font-bold">
+               <img
+                  src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=256"
+                  alt="NFT" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
+               ART</div>
+            <div
+               class="w-12 h-12 bg-red-500 rounded-full animated-border flex items-center justify-center text-white font-bold">
+               NEW
+            </div>
+            <!-- Add server button -->
+            <div
+               class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-gray-600 cursor-pointer hover:bg-gray-400">
+               <span class="material-icons">add</span>
+            </div>
+         </div>
+
+         <!-- Channel Sidebar -->
+         <div id="channelSidebar"
+            class="hidden md:flex flex-shrink-0 w-64 bg-gray-100 text-gray-800 flex-col shadow-md">
+            <div class="h-16 flex items-center justify-between px-4 bg-white border-b border-gray-200">
+               <h1 class="text-2xl font-bold text-purple-primary">Beanz Commune</h1>
+               <span class="material-icons cursor-pointer text-gray-500">expand_more</span>
+            </div>
+            <div class="flex-grow overflow-y-auto">
+               <div class="p-4">
+                  <h3 class="text-md font-semibold mb-2 flex items-center justify-between text-gray-700">
+                     <span>Text Channels</span>
+                     <span class="material-icons text-sm cursor-pointer">add</span>
+                  </h3>
+                  <ul>
+                     <li class="mb-2">
+                        <a href="#" class="flex items-center p-2 bg-purple-primary">
+                           <span class="material-icons mr-2 text-white">tag</span>
+                           <span class="text-white">general</span>
+                        </a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-200 hover:move-right">
+                           <span class="material-icons mr-2 text-gray-500">campaign</span>
+                           <span>announcements</span>
+                        </a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-200 hover:move-right">
+                           <span class="material-icons mr-2 text-gray-500">show_chart</span>
+                           <span>market-analysis</span>
+                        </a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-200 hover:move-right">
+                           <span class="material-icons mr-2 text-gray-500">help_outline</span>
+                           <span>help-and-support</span>
+                        </a>
+                     </li>
+                  </ul>
+
+                  <h3 class="text-md font-semibold mb-2 mt-6 flex items-center justify-between text-gray-700">
+                     <span>Spaces</span>
+                     <span class="material-icons text-sm cursor-pointer">add</span>
+                  </h3>
+                  <ul>
+                     <li class="mb-2">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-200 hover:move-right">
+                           <span class="material-icons mr-2 text-gray-500">interpreter_mode</span>
+                           <span>NFT Discussion</span>
+                        </a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-200 hover:move-right">
+                           <span class="material-icons mr-2 text-gray-500">interpreter_mode</span>
+                           <span>Trading Strategies</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- User info -->
+            <div class="p-4 bg-gray-100 flex items-center">
+               <img class="w-8 h-8 rounded-full mr-2" src="https://i.pravatar.cc/100" alt="User avatar">
+               <div class="flex-grow">
+                  <div class="text-sm font-semibold text-gray-700">Marmalade</div>
+                  <div class="text-xs text-gray-500">#Online</div>
+               </div>
+               <div class="flex space-x-2">
+                  <span class="material-icons text-gray-500 cursor-pointer">mic</span>
+                  <span class="material-icons text-gray-500 cursor-pointer">headset</span>
+                  <span class="material-icons text-gray-500 cursor-pointer">settings</span>
+               </div>
+            </div>
+         </div>
+
+         <!-- Main Content -->
+         <div class="flex-grow flex flex-col bg-white">
+            <!-- Channel Header -->
+            <div class="h-16 flex items-center justify-between bg-gray-50 px-4 shadow-sm">
+               <div class="flex items-center">
+                  <span class="material-icons mr-2 text-gray-500">tag</span>
+                  <h3 class="text-lg font-bold text-gray-700">general</h3>
+               </div>
+               <div class="flex items-center space-x-4">
+                  <button class="text-gray-500 hover:text-gray-700">
+                     <span class="material-icons">notifications</span>
+                  </button>
+                  <button class="text-gray-500 hover:text-gray-700">
+                     <span class="material-icons">inbox</span>
+                  </button>
+                  <button class="text-gray-500 hover:text-gray-700">
+                     <span class="material-icons">help_outline</span>
+                  </button>
+                  <div class="relative hidden md:block">
+                     <input type="text" placeholder="Search"
+                        class="bg-gray-200 text-gray-700 px-3 py-1 focus:outline-none focus:ring-0">
+                     <span
+                        class="material-icons absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500">search</span>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Messages -->
+            <div class="flex-grow overflow-y-auto p-4 space-y-4 bg-gray-50">
+               <div class="flex mb-4 items-start max-w-full mx-auto">
+                  <img class="w-10 h-10 rounded-full mr-4"
+                     src="https://th.bing.com/th/id/R.be0c6fae69da5a48980f7a4cabec8136?rik=mQkYAb0VjVkTxw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fNoAcfjG.jpg&ehk=2uJ8%2bulGwRQMneeF1VMGIAuI%2fgNvSymAExbvKIE3Qms%3d&risl=&pid=ImgRaw&r=0"
+                     alt="Profile Picture">
+                  <div class="flex-1">
+                     <div class="flex items-center">
+                        <span class="font-bold text-indigo-600">0x91029483464573</span>
+                        <span class="ml-2 text-xs text-gray-500">Today at 12:45 PM</span>
+                     </div>
+                     <p class="text-gray-700 mt-1">Hey everyone! Just picked up this awesome new NFT. What do you think?
+                     </p>
+                     <img
+                        src="https://i.seadn.io/s/raw/files/f1043fcb6a0beb217835ba583bd4d63e.png?auto=format&dpr=1&w=384"
+                        alt="NFT Image" class="mt-2 rounded-lg max-w-full">
+                     <div class="flex space-x-2 mt-2">
+                        <button class="text-gray-500 hover:text-gray-700">
+                           <span class="material-icons">thumb_up</span>
+                        </button>
+                        <button class="text-gray-500 hover:text-gray-700">
+                           <span class="material-icons">chat_bubble_outline</span>
+                        </button>
+                        <button class="text-gray-500 hover:text-gray-700">
+                           <span class="material-icons">share</span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="flex mb-4 items-start max-w-full mx-auto">
+                  <img class="w-10 h-10 rounded-full mr-4"
+                     src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=256"
+                     alt="Profile Picture">
+                  <div class="flex-1">
+                     <div class="flex items-center">
+                        <span class="font-bold text-green-600 animate-text flex items-center">
+                           Beanz Official
+                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                              stroke="#002aff" width="14" height="14" class="ml-1">
+                              <path
+                                 d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                              </path>
+                           </svg>
+                        </span>
+                        <span class="ml-2 text-xs text-gray-500">Today at 12:50 PM</span>
+                     </div>
+                     <p class="text-gray-700 mt-1">That's a great find! The color palette is fantastic. Have you checked
+                        its rarity score?</p>
+                  </div>
+               </div>
+
+               <div class="flex mb-4 items-start max-w-full mx-auto">
+                  <img class="w-10 h-10 rounded-full mr-4"
+                     src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=256"
+                     alt="Profile Picture">
+                  <div class="flex-1">
+                     <div class="flex items-center">
+                        <span class="font-bold text-green-600 animate-text flex items-center">
+                           Beanz Official
+                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                              stroke="#002aff" width="14" height="14" class="ml-1">
+                              <path
+                                 d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                              </path>
+                           </svg>
+                        </span>
+                        <span class="ml-2 text-xs text-gray-500">Today at 12:58 PM</span>
+                     </div>
+                     <p class="text-gray-700 mt-1">We've got new project guys, btw. Keep an eye on upcoming days!</p>
+                  </div>
+               </div>
+            </div>
+
+
+            <!-- Message Input -->
+            <div class=" bg-white">
+               <div class="flex items-center bg-gray-100 px-3 py-2">
+                  <button class="text-gray-500 hover:text-gray-700 mr-2">
+                     <span class="material-icons">add_circle</span>
+                  </button>
+                  <input type="text"
+                     class="flex-grow bg-transparent text-gray-700 placeholder-gray-500 focus:outline-none"
+                     placeholder="Message #general">
+                  <button class="text-gray-500 hover:text-gray-700 ml-2">
+                     <span class="material-icons">gif</span>
+                  </button>
+                  <button class="text-gray-500 hover:text-gray-700 ml-2">
+                     <span class="material-icons">sentiment_satisfied_alt</span>
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <!-- Member Sidebar -->
+         <div id="memberSidebar" class="hidden lg:flex flex-shrink-0 w-64 bg-gray-100 flex-col shadow-md">
+            <div class="p-4">
+               <h3 class="text-lg font-semibold text-gray-700 mb-2">Online - 3</h3>
+               <ul>
+                  <li class="flex items-center mb-2">
+                     <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                     <img class="w-8 h-8 rounded-full mr-2" src="https://i.pravatar.cc/150?img=3" alt="User avatar">
+                     <span class="text-gray-700">NFTEnthusiast</span>
+                  </li>
+                  <li class="flex items-center mb-2">
+                     <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                     <img class="w-8 h-8 rounded-full mr-2" src="https://i.pravatar.cc/150?img=4" alt="User avatar">
+                     <span class="text-gray-700">CryptoArtist</span>
+                  </li>
+                  <li class="flex items-center mb-2">
+                     <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                     <img class="w-8 h-8 rounded-full mr-2" src="https://i.pravatar.cc/150?img=5" alt="User avatar">
+                     <span class="text-gray-700">BlockchainDev</span>
+                  </li>
+               </ul>
+
+               <h3 class="text-lg font-semibold text-gray-700 mt-6 mb-2">Offline - 2</h3>
+               <ul>
+                  <li class="flex items-center mb-2 opacity-50">
+                     <span class="w-2 h-2 bg-gray-500 rounded-full mr-2"></span>
+                     <img class="w-8 h-8 rounded-full mr-2" src="https://i.pravatar.cc/150?img=6" alt="User avatar">
+                     <span class="text-gray-700">NFTCollector</span>
+                  </li>
+                  <li class="flex items-center mb-2 opacity-50">
+                     <span class="w-2 h-2 bg-gray-500 rounded-full mr-2"></span>
+                     <img class="w-8 h-8 rounded-full mr-2" src="https://i.pravatar.cc/150?img=7" alt="User avatar">
+                     <span class="text-gray-700">CryptoNewbie</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const serverSidebar = document.getElementById('serverSidebar');
+      const channelSidebar = document.getElementById('channelSidebar');
+      const memberSidebar = document.getElementById('memberSidebar');
+
+      mobileMenuBtn.addEventListener('click', () => {
+         serverSidebar.classList.toggle('hidden');
+         serverSidebar.classList.toggle('hidden');
+         channelSidebar.classList.toggle('hidden');
+      });
+   </script>
+
+   <script src="/dist/javascript/js-for-index.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+   <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

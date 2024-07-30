@@ -227,3 +227,19 @@ document.addEventListener('DOMContentLoaded', function () {
       });
    };
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+   function startImageRotation(element) {
+      const images = JSON.parse(element.getAttribute('data-images'));
+      const interval = parseInt(element.getAttribute('data-interval'), 10);
+      let index = 0;
+
+      setInterval(() => {
+         index = (index + 1) % images.length;
+         element.src = images[index];
+      }, interval);
+   }
+
+   const nftImages = document.querySelectorAll('img[data-images]');
+   nftImages.forEach(img => startImageRotation(img));
+});

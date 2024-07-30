@@ -11,4 +11,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
    }, { threshold: 0.1 });
 
    cards.forEach(card => observer.observe(card));
+
+   // Inisialisasi tombol scroll ke atas
+   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+   // Menampilkan tombol scroll ke atas ketika halaman digulir lebih dari 100px
+   window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+         scrollToTopBtn.classList.replace('opacity-0', 'opacity-100');
+      } else {
+         scrollToTopBtn.classList.replace('opacity-100', 'opacity-0');
+      }
+   };
+
+   // Menggulung halaman ke atas saat tombol diklik
+   scrollToTopBtn.onclick = function () {
+      window.scrollTo({
+         top: 0,
+         behavior: 'smooth'
+      });
+   };
 });
