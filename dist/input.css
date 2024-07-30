@@ -61,3 +61,8 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.area-chart {
+  height: 100px;
+  width: 100px;
+}
