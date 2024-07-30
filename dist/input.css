@@ -66,3 +66,47 @@
   height: 100px;
   width: 100px;
 }
+
+/* Animated Border with Rainbow Effect */
+@keyframes borderAnimation {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  28% {
+    border-color: yellow;
+  }
+  42% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  85% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red; /* Return to the starting color */
+  }
+}
+
+.animated-border {
+  border-style: solid; /* Ensure the border is solid */
+  border-width: 4px;
+  animation: borderAnimation 5s infinite linear; /* Adjust duration as needed */
+}
+
+/* Online Status Indicator */
+.online-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: #00ff00; /* Green color */
+  border-radius: 50%;
+  margin-right: 0.5rem; /* Space between the circle and the text */
+}
+
