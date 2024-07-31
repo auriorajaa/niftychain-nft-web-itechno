@@ -32,3 +32,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
       });
    };
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+   function addScrollAnimation() {
+      const sections = document.querySelectorAll('.animate-section');
+
+      const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+            if (entry.isIntersecting) {
+               entry.target.classList.add('is-visible');
+            } else {
+               entry.target.classList.remove('is-visible');
+            }
+         });
+      });
+
+      sections.forEach(section => {
+         observer.observe(section);
+      });
+   }
+
+   addScrollAnimation();
+});
