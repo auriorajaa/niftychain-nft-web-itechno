@@ -172,8 +172,7 @@
                      class="block py-2 px-3 md:p-0 text-gray-900 hover:text-light-sand hover:underline">Discover</a>
                </li>
                <li>
-                  <a href="#"
-                     class="block py-2 px-3 md:p-0 text-gray-900 hover:text-light-sand hover:underline">Profile</a>
+                  <a href="#" class="block py-2 px-3 md:p-0 text-light-sand font-bold md:bg-transparent">Profile</a>
                </li>
             </ul>
          </div>
@@ -251,7 +250,8 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                <div v-for="nft in paginatedNFTs" :key="nft.id" class="bg-white overflow-hidden nft-card"
                   data-aos="fade-up" data-aos-delay="600" @mousemove="applyHoverEffect" @mouseleave="removeHoverEffect">
-                  <a href="/dist/pages/nft-detail.html"> <img :src="nft.imageUrl" :alt="nft.name" class="w-full h-fit object-cover">
+                  <a href="/dist/pages/nft-detail.html"> <img :src="nft.imageUrl" :alt="nft.name"
+                        class="w-full h-fit object-cover">
                   </a>
                   <div class="p-4">
                      <h3 class="font-semibold text-2xl mb-2">{{ nft.name }}</h3>
