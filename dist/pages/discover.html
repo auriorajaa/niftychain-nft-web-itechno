@@ -48,7 +48,12 @@
    <!-- Scripts -->
    <script src="https://cdn.tailwindcss.com"></script>
    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 
    <!-- Additional SEO Meta Tags -->
    <meta name="robots" content="index, follow">
@@ -410,176 +415,180 @@
 
    <!-- FEATURED COMMUNITIES SECTION STARTED -->
    <section class="max-w-screen-xl mx-auto py-16 px-4 font-englebert">
-      <h2 class="text-5xl font-bold text-purple-primary px-4 py-2 mb-12 mx-auto text-center animate__animated
+      <div class="section-content">
+         <h2 class="text-5xl font-bold text-purple-primary px-4 py-2 mb-12 mx-auto text-center animate__animated
          animate__fadeInDown">
-         Featured Communities
-      </h2>
-      <div class="relative flex overflow-x-auto space-x-8 pb-2 hide-scroll-bar force-hide-scrollbar">
-         <!-- Card 1 -->
-         <div class="flex-shrink-0 w-80 bg-white overflow-hidden ">
-            <div class="relative">
-               <img
-                  src="https://i.seadn.io/gae/WRcl2YH8E3_7884mcJ0DRN7STGqA8xZQKd-0MFmPftlxUR6i1xB9todMXRW2M6SIpXKAZ842UqKDm1UrkKG8nr7l9NjCkIw-GLQSFQ?auto=format&dpr=1&w=1920"
-                  alt="Community Banner" class="w-full h-40 object-cover">
-               <div class="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
+            Featured Communities
+         </h2>
+         <div class="relative flex overflow-x-auto space-x-8 pb-2 hide-scroll-bar force-hide-scrollbar">
+            <!-- Card 1 -->
+            <div class="flex-shrink-0 w-80 bg-white overflow-hidden ">
+               <div class="relative">
                   <img
-                     src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=256"
-                     alt="Profile Picture" class="w-24 h-24 border-4 border-transparent animated-border">
+                     src="https://i.seadn.io/gae/WRcl2YH8E3_7884mcJ0DRN7STGqA8xZQKd-0MFmPftlxUR6i1xB9todMXRW2M6SIpXKAZ842UqKDm1UrkKG8nr7l9NjCkIw-GLQSFQ?auto=format&dpr=1&w=1920"
+                     alt="Community Banner" class="w-full h-40 object-cover">
+                  <div class="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
+                     <img
+                        src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=256"
+                        alt="Profile Picture" class="w-24 h-24 border-4 border-transparent animated-border">
+                  </div>
+               </div>
+               <div class="pt-12 px-6 pb-6">
+                  <h3 class="text-2xl font-bold text-purple-primary mb-2 text-center">Beanz Commune</h3>
+                  <p class="text-sm text-purple-400 mb-3 text-center flex items-center justify-center mx-auto gap-1">
+                     Created by:
+                     Beanz Official
+                     <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                        stroke="#002aff" width="14" height="14">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                           <style type="text/css">
+                              .st0 {
+                                 fill: none;
+                              }
+                           </style>
+                           <path
+                              d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                           </path>
+                        </g>
+                     </svg>
+                  </p>
+                  <p class="text-sm text-purple-400 mb-4 text-center">BEANZ are a small species that sprouts from the
+                     dirt
+                     in
+                     the garden.</p>
+                  <div class="flex justify-between text-sm text-purple-400 mb-6">
+                     <span class="flex items-center">
+                        <span class="online-indicator"></span>
+                        Online: 45
+                     </span>
+                     <span>Total Members: 1234</span>
+                  </div>
+                  <a href="/dist/pages/group-community.html">
+                     <button
+                        class="w-full py-3 px-4 bg-purple-primary text-gray-50 font-bold transition duration-300 hover:bg-light-sand focus:outline-none focus:ring-4 focus:ring-purple-300 transform hover:-translate-y-1">
+                        Join Community
+                     </button>
+                  </a>
                </div>
             </div>
-            <div class="pt-12 px-6 pb-6">
-               <h3 class="text-2xl font-bold text-purple-primary mb-2 text-center">Beanz Commune</h3>
-               <p class="text-sm text-purple-400 mb-3 text-center flex items-center justify-center mx-auto gap-1">
-                  Created by:
-                  Beanz Official
-                  <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                     stroke="#002aff" width="14" height="14">
-                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                     <g id="SVGRepo_iconCarrier">
-                        <style type="text/css">
-                           .st0 {
-                              fill: none;
-                           }
-                        </style>
-                        <path
-                           d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                        </path>
-                     </g>
-                  </svg>
-               </p>
-               <p class="text-sm text-purple-400 mb-4 text-center">BEANZ are a small species that sprouts from the
-                  dirt
-                  in
-                  the garden.</p>
-               <div class="flex justify-between text-sm text-purple-400 mb-6">
-                  <span class="flex items-center">
-                     <span class="online-indicator"></span>
-                     Online: 45
-                  </span>
-                  <span>Total Members: 1234</span>
+
+            <!-- Card 2 -->
+            <div class="flex-shrink-0 w-80 bg-white overflow-hidden ">
+               <div class="relative">
+                  <img src="https://wallpapers.com/images/featured/nft-pictures-9lzh8yl4jxxdz33z.jpg"
+                     alt="Community Banner" class="w-full h-40 object-cover">
+                  <div class="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
+                     <img src="https://th.bing.com/th/id/OIP.9YHCVtddVqf5i-aPJTiS_QHaHa?rs=1&pid=ImgDetMain"
+                        alt="Profile Picture" class="w-24 h-24 border-4 border-transparent">
+                  </div>
                </div>
-               <a href="/dist/pages/group-community.html">
+               <div class="pt-12 px-6 pb-6">
+                  <h3 class="text-2xl font-bold text-purple-primary mb-2 text-center">NFT Gem Hunter</h3>
+                  <p class="text-sm text-purple-400 mb-3 text-center flex items-center justify-center mx-auto gap-1">
+                     Created by:
+                     0x32Be34...</p>
+                  <p class="text-sm text-purple-400 mb-4 text-center">Join and let's discuss which NFT is worth to trade
+                     this week!</p>
+                  <div class="flex justify-between text-sm text-purple-400 mb-6">
+                     <span class="flex items-center">
+                        <span class="online-indicator"></span>
+                        Online: 95
+                     </span>
+                     <span>Total Members: 3094</span>
+                  </div>
                   <button
                      class="w-full py-3 px-4 bg-purple-primary text-gray-50 font-bold transition duration-300 hover:bg-light-sand focus:outline-none focus:ring-4 focus:ring-purple-300 transform hover:-translate-y-1">
                      Join Community
                   </button>
-               </a>
+               </div>
             </div>
-         </div>
 
-         <!-- Card 2 -->
-         <div class="flex-shrink-0 w-80 bg-white overflow-hidden ">
-            <div class="relative">
-               <img src="https://wallpapers.com/images/featured/nft-pictures-9lzh8yl4jxxdz33z.jpg"
-                  alt="Community Banner" class="w-full h-40 object-cover">
-               <div class="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
-                  <img src="https://th.bing.com/th/id/OIP.9YHCVtddVqf5i-aPJTiS_QHaHa?rs=1&pid=ImgDetMain"
-                     alt="Profile Picture" class="w-24 h-24 border-4 border-transparent">
-               </div>
-            </div>
-            <div class="pt-12 px-6 pb-6">
-               <h3 class="text-2xl font-bold text-purple-primary mb-2 text-center">NFT Gem Hunter</h3>
-               <p class="text-sm text-purple-400 mb-3 text-center flex items-center justify-center mx-auto gap-1">
-                  Created by:
-                  0x32Be34...</p>
-               <p class="text-sm text-purple-400 mb-4 text-center">Join and let's discuss which NFT is worth to trade
-                  this week!</p>
-               <div class="flex justify-between text-sm text-purple-400 mb-6">
-                  <span class="flex items-center">
-                     <span class="online-indicator"></span>
-                     Online: 95
-                  </span>
-                  <span>Total Members: 3094</span>
-               </div>
-               <button
-                  class="w-full py-3 px-4 bg-purple-primary text-gray-50 font-bold transition duration-300 hover:bg-light-sand focus:outline-none focus:ring-4 focus:ring-purple-300 transform hover:-translate-y-1">
-                  Join Community
-               </button>
-            </div>
-         </div>
-
-         <!-- Card 3 -->
-         <div class="flex-shrink-0 w-80 bg-white overflow-hidden ">
-            <div class="relative">
-               <img
-                  src="https://i.seadn.io/s/primary-drops/0x5b323e672feb6357aff0520bb784217c2ff2febd/32932318:about:media:73c54535-cc98-4ba5-8654-178b5a982f39.png?auto=format&dpr=1&w=1200"
-                  alt="Community Banner" class="w-full h-40 object-cover">
-               <div class="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
-                  <img src="https://i.seadn.io/s/raw/files/5382e5377cd9a8e154c02e2a0636a0e5.gif?auto=format&dpr=1&w=256"
-                     alt="Profile Picture" class="w-24 h-24 border-4 border-transparent">
-               </div>
-            </div>
-            <div class="pt-12 px-6 pb-6">
-               <h3 class="text-2xl font-bold text-purple-primary mb-2 text-center">Daemon Skulls</h3>
-               <p class="text-sm text-purple-400 mb-3 text-center flex items-center justify-center mx-auto gap-1">
-                  Created by:
-                  Daemon Skulls</p>
-               <p class="text-sm text-purple-400 mb-4 text-center">From the Characters we've played as in retro games
-                  to
-                  contemporary internet memes.</p>
-               <div class="flex justify-between text-sm text-purple-400 mb-6">
-                  <span class="flex items-center">
-                     <span class="online-indicator"></span>
-                     Online: 32
-                  </span>
-                  <span>Total Members: 839</span>
-               </div>
-               <button
-                  class="w-full py-3 px-4 bg-purple-primary text-gray-50 font-bold transition duration-300 hover:bg-light-sand focus:outline-none focus:ring-4 focus:ring-purple-300 transform hover:-translate-y-1">
-                  Join Community
-               </button>
-            </div>
-         </div>
-
-         <!-- Card 4 -->
-         <div class="flex-shrink-0 w-80 bg-white overflow-hidden ">
-            <div class="relative">
-               <img
-                  src="https://azfintech.co/wp-content/uploads/2022/07/62904297a52fa7ebc1cf4c95_Case_study_OpenSea_1200x628-min-scaled.jpg"
-                  alt="Community Banner" class="w-full h-40 object-cover">
-               <div class="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
+            <!-- Card 3 -->
+            <div class="flex-shrink-0 w-80 bg-white overflow-hidden ">
+               <div class="relative">
                   <img
-                     src="https://academy-public.coinmarketcap.com/srd-optimized-uploads/dfbed4eeb4154047aea7d68019f754f1.jpeg"
-                     alt="Profile Picture" class="w-24 h-24 border-4 border-transparent animated-border object-cover">
+                     src="https://i.seadn.io/s/primary-drops/0x5b323e672feb6357aff0520bb784217c2ff2febd/32932318:about:media:73c54535-cc98-4ba5-8654-178b5a982f39.png?auto=format&dpr=1&w=1200"
+                     alt="Community Banner" class="w-full h-40 object-cover">
+                  <div class="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
+                     <img
+                        src="https://i.seadn.io/s/raw/files/5382e5377cd9a8e154c02e2a0636a0e5.gif?auto=format&dpr=1&w=256"
+                        alt="Profile Picture" class="w-24 h-24 border-4 border-transparent">
+                  </div>
+               </div>
+               <div class="pt-12 px-6 pb-6">
+                  <h3 class="text-2xl font-bold text-purple-primary mb-2 text-center">Daemon Skulls</h3>
+                  <p class="text-sm text-purple-400 mb-3 text-center flex items-center justify-center mx-auto gap-1">
+                     Created by:
+                     Daemon Skulls</p>
+                  <p class="text-sm text-purple-400 mb-4 text-center">From the Characters we've played as in retro games
+                     to
+                     contemporary internet memes.</p>
+                  <div class="flex justify-between text-sm text-purple-400 mb-6">
+                     <span class="flex items-center">
+                        <span class="online-indicator"></span>
+                        Online: 32
+                     </span>
+                     <span>Total Members: 839</span>
+                  </div>
+                  <button
+                     class="w-full py-3 px-4 bg-purple-primary text-gray-50 font-bold transition duration-300 hover:bg-light-sand focus:outline-none focus:ring-4 focus:ring-purple-300 transform hover:-translate-y-1">
+                     Join Community
+                  </button>
                </div>
             </div>
-            <div class="pt-12 px-6 pb-6">
-               <h3 class="text-2xl font-bold text-purple-primary mb-2 text-center">Opensea Minting Info</h3>
-               <p class="text-sm text-purple-400 mb-3 text-center flex items-center justify-center mx-auto gap-1">
-                  Created by:
-                  Opensea Insider
-                  <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                     stroke="#002aff" width="14" height="14">
-                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                     <g id="SVGRepo_iconCarrier">
-                        <style type="text/css">
-                           .st0 {
-                              fill: none;
-                           }
-                        </style>
-                        <path
-                           d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                        </path>
-                     </g>
-                  </svg>
-               </p>
-               <p class="text-sm text-purple-400 mb-4 text-center">Want to know which NFT is open for minting in
-                  Opensea? Join us!</p>
-               <div class="flex justify-between text-sm text-purple-400 mb-6">
-                  <span class="flex items-center">
-                     <span class="online-indicator"></span>
-                     Online: 102
-                  </span>
-                  <span>Total Members: 4307</span>
+
+            <!-- Card 4 -->
+            <div class="flex-shrink-0 w-80 bg-white overflow-hidden ">
+               <div class="relative">
+                  <img
+                     src="https://azfintech.co/wp-content/uploads/2022/07/62904297a52fa7ebc1cf4c95_Case_study_OpenSea_1200x628-min-scaled.jpg"
+                     alt="Community Banner" class="w-full h-40 object-cover">
+                  <div class="absolute -bottom-10 left-1/2 transform -translate-x-1/2">
+                     <img
+                        src="https://academy-public.coinmarketcap.com/srd-optimized-uploads/dfbed4eeb4154047aea7d68019f754f1.jpeg"
+                        alt="Profile Picture"
+                        class="w-24 h-24 border-4 border-transparent animated-border object-cover">
+                  </div>
                </div>
-               <button
-                  class="w-full py-3 px-4 bg-purple-primary text-gray-50 font-bold transition duration-300 hover:bg-light-sand focus:outline-none focus:ring-4 focus:ring-purple-300 transform hover:-translate-y-1">
-                  Join Community
-               </button>
+               <div class="pt-12 px-6 pb-6">
+                  <h3 class="text-2xl font-bold text-purple-primary mb-2 text-center">Opensea Minting Info</h3>
+                  <p class="text-sm text-purple-400 mb-3 text-center flex items-center justify-center mx-auto gap-1">
+                     Created by:
+                     Opensea Insider
+                     <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                        stroke="#002aff" width="14" height="14">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                           <style type="text/css">
+                              .st0 {
+                                 fill: none;
+                              }
+                           </style>
+                           <path
+                              d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                           </path>
+                        </g>
+                     </svg>
+                  </p>
+                  <p class="text-sm text-purple-400 mb-4 text-center">Want to know which NFT is open for minting in
+                     Opensea? Join us!</p>
+                  <div class="flex justify-between text-sm text-purple-400 mb-6">
+                     <span class="flex items-center">
+                        <span class="online-indicator"></span>
+                        Online: 102
+                     </span>
+                     <span>Total Members: 4307</span>
+                  </div>
+                  <button
+                     class="w-full py-3 px-4 bg-purple-primary text-gray-50 font-bold transition duration-300 hover:bg-light-sand focus:outline-none focus:ring-4 focus:ring-purple-300 transform hover:-translate-y-1">
+                     Join Community
+                  </button>
+               </div>
             </div>
          </div>
       </div>
@@ -588,259 +597,263 @@
 
    <!-- TRENDING IN PFP SECTION STARTED -->
    <section class="bg-purple-primary py-12 px-4 sm:px-6 lg:px-8 font-englebert animate-fade-in animate-section">
-      <div class="container mx-auto">
-         <h2 class="text-5xl font-extrabold text-white mb-8 text-center">
-            Trending in PFP
-            <span class="block text-light-sand text-xl md:text-2xl mt-2">Discover the Hottest Collections</span>
-         </h2>
+      <div id="collections-bg" class="vanta-background"></div>
 
-         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <!-- Card 1 -->
-            <div class="bg-white overflow-hidden transform transition duration-500 hover:scale-105">
-               <div class="relative">
-                  <img class="w-full h-48 object-cover"
-                     src="https://i.seadn.io/gae/WRcl2YH8E3_7884mcJ0DRN7STGqA8xZQKd-0MFmPftlxUR6i1xB9todMXRW2M6SIpXKAZ842UqKDm1UrkKG8nr7l9NjCkIw-GLQSFQ?auto=format&dpr=1&w=1920"
-                     alt="Creator 1 Banner">
-                  <img
-                     class="absolute animated-border bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 "
-                     src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=256"
-                     alt="Creator 1">
-               </div>
-               <div class="p-6 pt-12">
-                  <h3 class="font-bold text-xl mb-2 text-purple-primary">Beanz Official</h3>
-                  <p class="text-sm text-purple-400 mb-3 items-center flex mx-auto">
-                     by Beanz Official
-                     <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                        stroke="#002aff" width="14" height="14">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                           <style type="text/css">
-                              .st0 {
-                                 fill: none;
-                              }
-                           </style>
-                           <path
-                              d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                           </path>
-                        </g>
-                     </svg>
-                  </p>
-                  <div class="flex items-center justify-between mb-2">
-                     <span class="text-purple-primary text-sm">Floor Price</span>
-                     <div class="flex items-center">
-                        <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
-                              fill="#3c3c3d" />
+      <div class="section-content">
+         <div class="container mx-auto">
+            <h2 class="text-5xl font-extrabold text-white mb-8 text-center">
+               Trending in PFP
+               <span class="block text-light-sand text-xl md:text-2xl mt-2">Discover the Hottest Collections</span>
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+               <!-- Card 1 -->
+               <div class="bg-white overflow-hidden transform transition duration-500 hover:scale-105">
+                  <div class="relative">
+                     <img class="w-full h-48 object-cover"
+                        src="https://i.seadn.io/gae/WRcl2YH8E3_7884mcJ0DRN7STGqA8xZQKd-0MFmPftlxUR6i1xB9todMXRW2M6SIpXKAZ842UqKDm1UrkKG8nr7l9NjCkIw-GLQSFQ?auto=format&dpr=1&w=1920"
+                        alt="Creator 1 Banner">
+                     <img
+                        class="absolute animated-border bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 "
+                        src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=256"
+                        alt="Creator 1">
+                  </div>
+                  <div class="p-6 pt-12">
+                     <h3 class="font-bold text-xl mb-2 text-purple-primary">Beanz Official</h3>
+                     <p class="text-sm text-purple-400 mb-3 items-center flex mx-auto">
+                        by Beanz Official
+                        <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                           stroke="#002aff" width="14" height="14">
+                           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                           <g id="SVGRepo_iconCarrier">
+                              <style type="text/css">
+                                 .st0 {
+                                    fill: none;
+                                 }
+                              </style>
+                              <path
+                                 d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                              </path>
+                           </g>
                         </svg>
-                        <span class="font-semibold">0.8 ETH</span>
+                     </p>
+                     <div class="flex items-center justify-between mb-2">
+                        <span class="text-purple-primary text-sm">Floor Price</span>
+                        <div class="flex items-center">
+                           <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                                 fill="#3c3c3d" />
+                           </svg>
+                           <span class="font-semibold">0.8 ETH</span>
+                        </div>
+                     </div>
+                     <div class="flex items-center justify-between">
+                        <span class="text-purple-primary text-sm">Volume (24h)</span>
+                        <div class="flex items-center">
+                           <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                                 fill="#3c3c3d" />
+                           </svg>
+                           <span class="font-semibold">200 ETH</span>
+                        </div>
                      </div>
                   </div>
-                  <div class="flex items-center justify-between">
-                     <span class="text-purple-primary text-sm">Volume (24h)</span>
-                     <div class="flex items-center">
-                        <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
-                              fill="#3c3c3d" />
-                        </svg>
-                        <span class="font-semibold">200 ETH</span>
-                     </div>
+                  <div class="px-6 py-4 bg-gray-100">
+                     <a href="/dist/pages/seller.html">
+                        <button
+                           class="w-full bg-purple-primary text-white font-bold py-2 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                           View Collection
+                        </button>
+                     </a>
                   </div>
                </div>
-               <div class="px-6 py-4 bg-gray-100">
-                  <a href="/dist/pages/seller.html">
+
+               <!-- Card 2 -->
+               <div class="bg-white overflow-hidden transform transition duration-500 hover:scale-105">
+                  <div class="relative">
+                     <img class="w-full h-48 object-cover"
+                        src="https://i.seadn.io/s/primary-drops/0xac8652d81c9369af0da8bf20ba1ad3f5be5459e3/32925376:about:media:1f3fc912-2346-4a7a-a128-df55bc2686e1.png?auto=format&dpr=1&w=1200"
+                        alt="Creator 2 Banner">
+                     <img class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 "
+                        src="https://i.seadn.io/s/raw/files/7fec1f14d324097522609b389e7ce0e8.png?auto=format&dpr=1&w=256"
+                        alt="Creator 2">
+                  </div>
+                  <div class="p-6 pt-12">
+                     <h3 class="font-bold text-xl mb-2 text-purple-primary">MrBeast on Base</h3>
+                     <p class="text-sm text-purple-400 mb-3 items-center flex mx-auto">
+                        by MrBeast
+                     </p>
+                     <div class="flex items-center justify-between mb-2">
+                        <span class="text-purple-primary text-sm">Floor Price</span>
+                        <div class="flex items-center">
+                           <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                                 fill="#3c3c3d" />
+                           </svg>
+                           <span class="font-semibold">0.5 ETH</span>
+                        </div>
+                     </div>
+                     <div class="flex items-center justify-between">
+                        <span class="text-purple-primary text-sm">Volume (24h)</span>
+                        <div class="flex items-center">
+                           <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                                 fill="#3c3c3d" />
+                           </svg>
+                           <span class="font-semibold">70 ETH</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="px-6 py-4 bg-gray-100">
                      <button
                         class="w-full bg-purple-primary text-white font-bold py-2 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105">
                         View Collection
                      </button>
-                  </a>
+
+                  </div>
+               </div>
+
+               <!-- Card 3 -->
+               <div class="bg-white overflow-hidden transform transition duration-500 hover:scale-105">
+                  <div class="relative">
+                     <img class="w-full h-48 object-cover"
+                        src="https://i.seadn.io/gcs/files/ff12374123ac5e8571b01d03874e8a76.png?auto=format&dpr=1&w=1200"
+                        alt="Creator 3 Banner">
+                     <img
+                        class="absolute animated-border bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 "
+                        src="https://i.seadn.io/gae/s4Td3KYsUlCblO6lQKAGAWdKwsCuumcxYpebM_YL-Pex-BP886JYAWjKBLeB5StNopAAD6kVx3QHqWm9AmudXyCaCZszHbt8SdteEQ?auto=format&dpr=1&w=256"
+                        alt="Creator 3">
+                  </div>
+                  <div class="p-6 pt-12">
+                     <h3 class="font-bold text-xl mb-2 text-purple-primary">Lil Pudgys</h3>
+                     <p class="text-sm text-purple-400 mb-3 items-center flex mx-auto">
+                        by TheIglooCompany
+                        <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                           stroke="#002aff" width="14" height="14">
+                           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                           <g id="SVGRepo_iconCarrier">
+                              <style type="text/css">
+                                 .st0 {
+                                    fill: none;
+                                 }
+                              </style>
+                              <path
+                                 d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                              </path>
+                           </g>
+                        </svg>
+                     </p>
+                     <div class="flex items-center justify-between mb-2">
+                        <span class="text-purple-primary text-sm">Floor Price</span>
+                        <div class="flex items-center">
+                           <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                                 fill="#3c3c3d" />
+                           </svg>
+                           <span class="font-semibold">2.5 ETH</span>
+                        </div>
+                     </div>
+                     <div class="flex items-center justify-between">
+                        <span class="text-purple-primary text-sm">Volume (24h)</span>
+                        <div class="flex items-center">
+                           <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                                 fill="#3c3c3d" />
+                           </svg>
+                           <span class="font-semibold">120 ETH</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="px-6 py-4 bg-gray-100">
+                     <button
+                        class="w-full bg-purple-primary text-white font-bold py-2 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                        View Collection
+                     </button>
+
+                  </div>
+               </div>
+
+               <!-- Card 4 -->
+               <div class="bg-white overflow-hidden transform transition duration-500 hover:scale-105">
+                  <div class="relative">
+                     <img class="w-full h-48 object-cover"
+                        src="https://i.seadn.io/gcs/files/8a26e3de0f309089cbb1e5ab969fc0bc.png?auto=format&dpr=1&w=1200"
+                        alt="Creator 4 Banner">
+                     <img
+                        class="absolute animated-border bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 "
+                        src="https://i.seadn.io/gae/yNi-XdGxsgQCPpqSio4o31ygAV6wURdIdInWRcFIl46UjUQ1eV7BEndGe8L661OoG-clRi7EgInLX4LPu9Jfw4fq0bnVYHqg7RFi?auto=format&dpr=1&w=256"
+                        alt="Creator 4">
+                  </div>
+                  <div class="p-6 pt-12">
+                     <h3 class="font-bold text-xl mb-2 text-purple-primary">Pudgy Penguins</h3>
+                     <p class="text-sm text-purple-400 mb-3 items-center flex mx-auto">
+                        by TheIglooCompany
+                        <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                           stroke="#002aff" width="14" height="14">
+                           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                           <g id="SVGRepo_iconCarrier">
+                              <style type="text/css">
+                                 .st0 {
+                                    fill: none;
+                                 }
+                              </style>
+                              <path
+                                 d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                              </path>
+                           </g>
+                        </svg>
+                     </p>
+                     <div class="flex items-center justify-between mb-2">
+                        <span class="text-purple-primary text-sm">Floor Price</span>
+                        <div class="flex items-center">
+                           <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                                 fill="#3c3c3d" />
+                           </svg>
+                           <span class="font-semibold">12 ETH</span>
+                        </div>
+                     </div>
+                     <div class="flex items-center justify-between">
+                        <span class="text-purple-primary text-sm">Volume (24h)</span>
+                        <div class="flex items-center">
+                           <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                                 fill="#3c3c3d" />
+                           </svg>
+                           <span class="font-semibold">320 ETH</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="px-6 py-4 bg-gray-100">
+                     <button
+                        class="w-full bg-purple-primary text-white font-bold py-2 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                        View Collection
+                     </button>
+
+                  </div>
                </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="bg-white overflow-hidden transform transition duration-500 hover:scale-105">
-               <div class="relative">
-                  <img class="w-full h-48 object-cover"
-                     src="https://i.seadn.io/s/primary-drops/0xac8652d81c9369af0da8bf20ba1ad3f5be5459e3/32925376:about:media:1f3fc912-2346-4a7a-a128-df55bc2686e1.png?auto=format&dpr=1&w=1200"
-                     alt="Creator 2 Banner">
-                  <img class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 "
-                     src="https://i.seadn.io/s/raw/files/7fec1f14d324097522609b389e7ce0e8.png?auto=format&dpr=1&w=256"
-                     alt="Creator 2">
-               </div>
-               <div class="p-6 pt-12">
-                  <h3 class="font-bold text-xl mb-2 text-purple-primary">MrBeast on Base</h3>
-                  <p class="text-sm text-purple-400 mb-3 items-center flex mx-auto">
-                     by MrBeast
-                  </p>
-                  <div class="flex items-center justify-between mb-2">
-                     <span class="text-purple-primary text-sm">Floor Price</span>
-                     <div class="flex items-center">
-                        <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
-                              fill="#3c3c3d" />
-                        </svg>
-                        <span class="font-semibold">0.5 ETH</span>
-                     </div>
-                  </div>
-                  <div class="flex items-center justify-between">
-                     <span class="text-purple-primary text-sm">Volume (24h)</span>
-                     <div class="flex items-center">
-                        <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
-                              fill="#3c3c3d" />
-                        </svg>
-                        <span class="font-semibold">70 ETH</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="px-6 py-4 bg-gray-100">
-                  <button
-                     class="w-full bg-purple-primary text-white font-bold py-2 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105">
-                     View Collection
-                  </button>
-
-               </div>
+            <div class="mt-12 text-center">
+               <a href="#"
+                  class="inline-block bg-light-sand text-black font-light py-3 px-8 border-2 border-black  transition-transform duration-300 ease-in-out transform hover:scale-105">
+                  Explore All Trending Collections
+               </a>
             </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white overflow-hidden transform transition duration-500 hover:scale-105">
-               <div class="relative">
-                  <img class="w-full h-48 object-cover"
-                     src="https://i.seadn.io/gcs/files/ff12374123ac5e8571b01d03874e8a76.png?auto=format&dpr=1&w=1200"
-                     alt="Creator 3 Banner">
-                  <img
-                     class="absolute animated-border bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 "
-                     src="https://i.seadn.io/gae/s4Td3KYsUlCblO6lQKAGAWdKwsCuumcxYpebM_YL-Pex-BP886JYAWjKBLeB5StNopAAD6kVx3QHqWm9AmudXyCaCZszHbt8SdteEQ?auto=format&dpr=1&w=256"
-                     alt="Creator 3">
-               </div>
-               <div class="p-6 pt-12">
-                  <h3 class="font-bold text-xl mb-2 text-purple-primary">Lil Pudgys</h3>
-                  <p class="text-sm text-purple-400 mb-3 items-center flex mx-auto">
-                     by TheIglooCompany
-                     <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                        stroke="#002aff" width="14" height="14">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                           <style type="text/css">
-                              .st0 {
-                                 fill: none;
-                              }
-                           </style>
-                           <path
-                              d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                           </path>
-                        </g>
-                     </svg>
-                  </p>
-                  <div class="flex items-center justify-between mb-2">
-                     <span class="text-purple-primary text-sm">Floor Price</span>
-                     <div class="flex items-center">
-                        <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
-                              fill="#3c3c3d" />
-                        </svg>
-                        <span class="font-semibold">2.5 ETH</span>
-                     </div>
-                  </div>
-                  <div class="flex items-center justify-between">
-                     <span class="text-purple-primary text-sm">Volume (24h)</span>
-                     <div class="flex items-center">
-                        <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
-                              fill="#3c3c3d" />
-                        </svg>
-                        <span class="font-semibold">120 ETH</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="px-6 py-4 bg-gray-100">
-                  <button
-                     class="w-full bg-purple-primary text-white font-bold py-2 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105">
-                     View Collection
-                  </button>
-
-               </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="bg-white overflow-hidden transform transition duration-500 hover:scale-105">
-               <div class="relative">
-                  <img class="w-full h-48 object-cover"
-                     src="https://i.seadn.io/gcs/files/8a26e3de0f309089cbb1e5ab969fc0bc.png?auto=format&dpr=1&w=1200"
-                     alt="Creator 4 Banner">
-                  <img
-                     class="absolute animated-border bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-20 h-20 "
-                     src="https://i.seadn.io/gae/yNi-XdGxsgQCPpqSio4o31ygAV6wURdIdInWRcFIl46UjUQ1eV7BEndGe8L661OoG-clRi7EgInLX4LPu9Jfw4fq0bnVYHqg7RFi?auto=format&dpr=1&w=256"
-                     alt="Creator 4">
-               </div>
-               <div class="p-6 pt-12">
-                  <h3 class="font-bold text-xl mb-2 text-purple-primary">Pudgy Penguins</h3>
-                  <p class="text-sm text-purple-400 mb-3 items-center flex mx-auto">
-                     by TheIglooCompany
-                     <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                        stroke="#002aff" width="14" height="14">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                           <style type="text/css">
-                              .st0 {
-                                 fill: none;
-                              }
-                           </style>
-                           <path
-                              d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                           </path>
-                        </g>
-                     </svg>
-                  </p>
-                  <div class="flex items-center justify-between mb-2">
-                     <span class="text-purple-primary text-sm">Floor Price</span>
-                     <div class="flex items-center">
-                        <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
-                              fill="#3c3c3d" />
-                        </svg>
-                        <span class="font-semibold">12 ETH</span>
-                     </div>
-                  </div>
-                  <div class="flex items-center justify-between">
-                     <span class="text-purple-primary text-sm">Volume (24h)</span>
-                     <div class="flex items-center">
-                        <svg class="w-4 h-4 mr-1" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
-                              fill="#3c3c3d" />
-                        </svg>
-                        <span class="font-semibold">320 ETH</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="px-6 py-4 bg-gray-100">
-                  <button
-                     class="w-full bg-purple-primary text-white font-bold py-2 px-4 transition-transform duration-300 ease-in-out transform hover:scale-105">
-                     View Collection
-                  </button>
-
-               </div>
-            </div>
-         </div>
-
-         <div class="mt-12 text-center">
-            <a href="#"
-               class="inline-block bg-light-sand text-black font-light py-3 px-8 border-2 border-black  transition-transform duration-300 ease-in-out transform hover:scale-105">
-               Explore All Trending Collections
-            </a>
          </div>
       </div>
    </section>
