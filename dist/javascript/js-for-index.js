@@ -1,77 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-   // Hero Section - Waves effect
-   VANTA.WAVES({
-      el: "#hero-bg",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0xCCCCCC,
-      shininess: 30.00,
-      waveHeight: 15.00,
-      waveSpeed: 0.75,
-      zoom: 0.65
-   });
 
-   // Trusted By Section - Net effect
-   VANTA.NET({
-      el: "#trusted-bg",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0xA37400,
-      backgroundColor: 0xFFFBBE,
-      points: 5, // Kurangi jumlah titik untuk garis yang lebih jarang
-      maxDistance: 25.00, // Tambah jarak maksimal antar titik
-      spacing: 25.00 // Tambah jarak antar titik
-   });
-
-
-   // Trending Auction Section - Birds effect
-   VANTA.BIRDS({
-      el: "#auction-bg",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      backgroundColor: 0xf0f0f0,  // Latar belakang abu-abu sangat terang
-      color1: 0xA374D5,  // Warna ungu primer
-      color2: 0xFFFBBE,  // Warna light sand
-      colorMode: "variance",
-      birdSize: 1.20,
-      wingSpan: 20.00,
-      speedLimit: 3.00,
-      separation: 50.00,
-      alignment: 20.00,
-      cohesion: 20.00,
-      quantity: 3.00  // Jumlah burung, sesuaikan sesuai kebutuhan
-   });
-
-   // Trending Collections Section - Clouds effect
-   VANTA.CLOUDS({
-      el: "#collections-bg",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      skyColor: 0xA374D5,
-      cloudColor: 0xCCAAFF,
-      cloudShadowColor: 0x8855CC,
-      sunColor: 0xFFFFBB,
-      sunGlareColor: 0xFFFFDD,
-      sunlightColor: 0xFFFFFF
-   });
 
    // Menambahkan properti CSS custom '--i' pada elemen dengan kelas 'letter'
    document.querySelectorAll('.letter').forEach((letter, index) => {
@@ -165,121 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
       observer.observe(section);
    });
 
-   // Data untuk grafik
-   const chartData = [
-      {
-         id: 'area-chart1',
-         data: [12, 19, 3, 5, 2, 3, 7], // Data untuk koleksi 1
-      },
-      {
-         id: 'area-chart2',
-         data: [10, 12, 15, 14, 10, 8, 12], // Data untuk koleksi 2
-      },
-      {
-         id: 'area-chart3',
-         data: [8, 12, 5, 4, 10, 8, 19], // Data untuk koleksi 3
-      },
-      {
-         id: 'area-chart4',
-         data: [28, 12, 5, 34, 47, 22, 259], // Data untuk koleksi 4
-      },
-      {
-         id: 'area-chart5',
-         data: [8, 12, 15, 4, 7, 22, 25], // Data untuk koleksi 5
-      },
-      {
-         id: 'area-chart6',
-         data: [6, 5, 8, 6, 4, 7, 5], // Data untuk koleksi 6
-      },
-      {
-         id: 'area-chart7',
-         data: [8, 10, 9, 12, 11, 13, 10], // Data untuk koleksi 7
-      }
-   ];
-
-   // Menginisialisasi grafik untuk setiap data grafik
-   chartData.forEach((chartInfo) => {
-      const data = chartInfo.data;
-      const color = data[data.length - 1] >= data[0]
-         ? 'rgba(168, 230, 207, 0.7)' // Hijau mint pastel dengan opacity
-         : 'rgba(255, 165, 171, 0.7)'; // Merah muda lembut dengan opacity
-
-      // Konfigurasi opsi untuk grafik
-      const options = {
-         chart: {
-            height: "100%", // Tinggi grafik
-            maxWidth: "100%", // Lebar maksimum grafik
-            type: "area", // Tipe grafik: area
-            fontFamily: "Inter, sans-serif", // Font yang digunakan
-            dropShadow: {
-               enabled: false, // Menonaktifkan efek bayangan
-            },
-            toolbar: {
-               show: false, // Menyembunyikan toolbar grafik
-            },
-         },
-         tooltip: {
-            enabled: true, // Mengaktifkan tooltip
-            x: {
-               show: false, // Menyembunyikan tooltip pada sumbu x
-            },
-         },
-         fill: {
-            type: "gradient", // Jenis pengisian: gradien
-            gradient: {
-               opacityFrom: 0.55, // Opasitas awal gradien
-               opacityTo: 0, // Opasitas akhir gradien
-               shade: "#1C64F2", // Warna gradien
-               gradientToColors: [color], // Warna akhir gradien
-            },
-         },
-         dataLabels: {
-            enabled: false, // Menonaktifkan label data
-         },
-         stroke: {
-            width: 2, // Ketebalan garis grafik
-            colors: [color], // Warna garis grafik
-         },
-         grid: {
-            show: false, // Menyembunyikan grid
-            strokeDashArray: 4, // Garis putus-putus pada grid
-            padding: {
-               left: 2, // Padding kiri
-               right: 2, // Padding kanan
-               top: 0 // Padding atas
-            },
-         },
-         series: [
-            {
-               name: "Volume", // Nama seri data
-               data: data, // Data seri
-               color: color, // Warna seri
-            },
-         ],
-         xaxis: {
-            categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'], // Kategori sumbu x
-            labels: {
-               show: false, // Menyembunyikan label sumbu x
-            },
-            axisBorder: {
-               show: false, // Menyembunyikan batas sumbu x
-            },
-            axisTicks: {
-               show: false, // Menyembunyikan tanda sumbu x
-            },
-         },
-         yaxis: {
-            show: false, // Menyembunyikan sumbu y
-         },
-      };
-
-      // Menggambar grafik jika elemen ID tersedia dan ApexCharts terdefinisi
-      if (document.getElementById(chartInfo.id) && typeof ApexCharts !== 'undefined') {
-         const chart = new ApexCharts(document.getElementById(chartInfo.id), options);
-         chart.render();
-      }
-   });
-
    // Inisialisasi tombol scroll ke atas
    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -315,4 +128,60 @@ document.addEventListener('DOMContentLoaded', function () {
 
    const nftImages = document.querySelectorAll('img[data-images]');
    nftImages.forEach(img => startImageRotation(img));
+});
+
+// Hero Section - Waves effect
+VANTA.WAVES({
+   el: "#hero-bg",
+   mouseControls: true,
+   touchControls: true,
+   gyroControls: false,
+   minHeight: 200.00,
+   minWidth: 200.00,
+   scale: 1.00,
+   scaleMobile: 1.00,
+   color: 0xCCCCCC,
+   shininess: 30.00,
+   waveHeight: 15.00,
+   waveSpeed: 0.75,
+   zoom: 0.65
+});
+
+// Trending Auction Section - Birds effect
+VANTA.BIRDS({
+   el: "#auction-bg",
+   mouseControls: true,
+   touchControls: true,
+   gyroControls: false,
+   minHeight: 200.00,
+   minWidth: 200.00,
+   scale: 1.00,
+   scaleMobile: 1.00,
+   backgroundColor: 0xf0f0f0,  // Latar belakang abu-abu sangat terang
+   color1: 0xA374D5,  // Warna ungu primer
+   color2: 0xFFFBBE,  // Warna light sand
+   colorMode: "variance",
+   birdSize: 1.20,
+   wingSpan: 20.00,
+   speedLimit: 3.00,
+   separation: 50.00,
+   alignment: 20.00,
+   cohesion: 20.00,
+   quantity: 3.00  // Jumlah burung, sesuaikan sesuai kebutuhan
+});
+
+// Trending Collections Section - Clouds effect
+VANTA.CLOUDS({
+   el: "#collections-bg",
+   mouseControls: true,
+   touchControls: true,
+   gyroControls: false,
+   minHeight: 200.00,
+   minWidth: 200.00,
+   skyColor: 0xA374D5,
+   cloudColor: 0xCCAAFF,
+   cloudShadowColor: 0x8855CC,
+   sunColor: 0xFFFFBB,
+   sunGlareColor: 0xFFFFDD,
+   sunlightColor: 0xFFFFFF
 });
