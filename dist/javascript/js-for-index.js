@@ -1,4 +1,77 @@
 document.addEventListener('DOMContentLoaded', function () {
+   // Hero Section - Waves effect
+   VANTA.WAVES({
+      el: "#hero-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xCCCCCC,
+      shininess: 30.00,
+      waveHeight: 15.00,
+      waveSpeed: 0.75,
+      zoom: 0.65
+   });
+
+   // Trusted By Section - Net effect
+   VANTA.NET({
+      el: "#trusted-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xA37400,
+      backgroundColor: 0xFFFBBE,
+      points: 5, // Kurangi jumlah titik untuk garis yang lebih jarang
+      maxDistance: 25.00, // Tambah jarak maksimal antar titik
+      spacing: 25.00 // Tambah jarak antar titik
+   });
+
+
+   // Trending Auction Section - Birds effect
+   VANTA.BIRDS({
+      el: "#auction-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xf0f0f0,  // Latar belakang abu-abu sangat terang
+      color1: 0xA374D5,  // Warna ungu primer
+      color2: 0xFFFBBE,  // Warna light sand
+      colorMode: "variance",
+      birdSize: 1.20,
+      wingSpan: 20.00,
+      speedLimit: 3.00,
+      separation: 50.00,
+      alignment: 20.00,
+      cohesion: 20.00,
+      quantity: 3.00  // Jumlah burung, sesuaikan sesuai kebutuhan
+   });
+
+   // Trending Collections Section - Clouds effect
+   VANTA.CLOUDS({
+      el: "#collections-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      skyColor: 0xA374D5,
+      cloudColor: 0xCCAAFF,
+      cloudShadowColor: 0x8855CC,
+      sunColor: 0xFFFFBB,
+      sunGlareColor: 0xFFFFDD,
+      sunlightColor: 0xFFFFFF
+   });
 
    // Menambahkan properti CSS custom '--i' pada elemen dengan kelas 'letter'
    document.querySelectorAll('.letter').forEach((letter, index) => {

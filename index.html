@@ -48,6 +48,12 @@
    <script src="https://cdn.tailwindcss.com"></script>
    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 
    <!-- Additional SEO Meta Tags -->
    <meta name="robots" content="index, follow">
@@ -354,142 +360,147 @@
    <!-- WALLET MODAL SECTION ENDED -->
 
    <!-- HERO SECTION STARTED -->
-   <section class="relative bg-gray-100 font-englebert overflow-hidden">
-      <div class="container max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-         <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
-            <!-- NFT Grid -->
-            <div class="lg:block">
-               <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                  <!-- NFT 1 -->
-                  <div class="relative transform transition-transform duration-300 ease-in-out">
-                     <img class="w-full h-48 object-cover"
-                        src="https://i.seadn.io/gcs/files/659194e9e41cf2aa161fdb2a9378d19a.png?auto=format&dpr=1&w=384"
-                        alt="NFT 1" id="nft1"
-                        data-images='["https://i.seadn.io/gcs/files/659194e9e41cf2aa161fdb2a9378d19a.png?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/3e6b8a0cf05e13d00a566b76ce8bfe97.png?auto=format&dpr=1&w=384"]'
-                        data-interval="2079">
-                  </div>
-                  <!-- NFT 2 -->
-                  <div class="relative transform transition-transform duration-300 ease-in-out">
-                     <img class="w-full h-48 object-cover"
-                        src="https://i.seadn.io/s/raw/files/ccca1c6af38e2f4fc28c3554baca907b.webp?auto=format&dpr=1&w=384"
-                        alt="NFT 2" id="nft2"
-                        data-images='["https://i.seadn.io/s/raw/files/ccca1c6af38e2f4fc28c3554baca907b.webp?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/7af8b383891bdc7d5b966d6ea23f4606.webp?auto=format&dpr=1&w=384"]'
-                        data-interval="3071">
-                  </div>
+   <section class="relative font-englebert overflow-hidden">
+      <div id="hero-bg" class="vanta-background"></div>
+      <div class="section-content">
+         <div class="container max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+               <!-- NFT Grid -->
+               <div class="lg:block">
+                  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                     <!-- NFT 1 -->
+                     <div class="relative transform transition-transform duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                           src="https://i.seadn.io/gcs/files/659194e9e41cf2aa161fdb2a9378d19a.png?auto=format&dpr=1&w=384"
+                           alt="NFT 1" id="nft1"
+                           data-images='["https://i.seadn.io/gcs/files/659194e9e41cf2aa161fdb2a9378d19a.png?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/3e6b8a0cf05e13d00a566b76ce8bfe97.png?auto=format&dpr=1&w=384"]'
+                           data-interval="2079">
+                     </div>
+                     <!-- NFT 2 -->
+                     <div class="relative transform transition-transform duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                           src="https://i.seadn.io/s/raw/files/ccca1c6af38e2f4fc28c3554baca907b.webp?auto=format&dpr=1&w=384"
+                           alt="NFT 2" id="nft2"
+                           data-images='["https://i.seadn.io/s/raw/files/ccca1c6af38e2f4fc28c3554baca907b.webp?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/7af8b383891bdc7d5b966d6ea23f4606.webp?auto=format&dpr=1&w=384"]'
+                           data-interval="3071">
+                     </div>
 
-                  <!-- NFT 3 -->
-                  <div class="relative transform transition-transform duration-300 ease-in-out">
-                     <img class="w-full h-48 object-cover"
-                        src="https://i.seadn.io/s/raw/files/85c2cd8d532623a1a9dac05132c33b6e.png?auto=format&dpr=1&w=384"
-                        alt="NFT 3" id="nft3"
-                        data-images='["https://i.seadn.io/s/raw/files/85c2cd8d532623a1a9dac05132c33b6e.png?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/bfd3493ef2c99a3107bb495e130f6d65.png?auto=format&dpr=1&w=384"]'
-                        data-interval="1794">
-                  </div>
+                     <!-- NFT 3 -->
+                     <div class="relative transform transition-transform duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                           src="https://i.seadn.io/s/raw/files/85c2cd8d532623a1a9dac05132c33b6e.png?auto=format&dpr=1&w=384"
+                           alt="NFT 3" id="nft3"
+                           data-images='["https://i.seadn.io/s/raw/files/85c2cd8d532623a1a9dac05132c33b6e.png?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/bfd3493ef2c99a3107bb495e130f6d65.png?auto=format&dpr=1&w=384"]'
+                           data-interval="1794">
+                     </div>
 
-                  <!-- NFT 4 -->
-                  <div class="relative transform transition-transform duration-300 ease-in-out">
-                     <img class="w-full h-48 object-cover"
-                        src="https://i.seadn.io/gae/pnzcurLSWJe4MXw8yIWABWeh7-lKH0fpKn_UoGzsUjtzMNoX_1wQ1UjO5PgIWjx0rVnaQgevD5GxbgppjCsWPg8d5G0si_2PDQqIOw?auto=format&dpr=1&w=384"
-                        alt="NFT 4" id="nft4"
-                        data-images='["https://i.seadn.io/gae/pnzcurLSWJe4MXw8yIWABWeh7-lKH0fpKn_UoGzsUjtzMNoX_1wQ1UjO5PgIWjx0rVnaQgevD5GxbgppjCsWPg8d5G0si_2PDQqIOw?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/bfbeeadaba5c9db46a565aab7fcbe216.jpg?auto=format&dpr=1&w=384"]'
-                        data-interval="2142">
-                  </div>
+                     <!-- NFT 4 -->
+                     <div class="relative transform transition-transform duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                           src="https://i.seadn.io/gae/pnzcurLSWJe4MXw8yIWABWeh7-lKH0fpKn_UoGzsUjtzMNoX_1wQ1UjO5PgIWjx0rVnaQgevD5GxbgppjCsWPg8d5G0si_2PDQqIOw?auto=format&dpr=1&w=384"
+                           alt="NFT 4" id="nft4"
+                           data-images='["https://i.seadn.io/gae/pnzcurLSWJe4MXw8yIWABWeh7-lKH0fpKn_UoGzsUjtzMNoX_1wQ1UjO5PgIWjx0rVnaQgevD5GxbgppjCsWPg8d5G0si_2PDQqIOw?auto=format&dpr=1&w=384", "https://i.seadn.io/s/raw/files/bfbeeadaba5c9db46a565aab7fcbe216.jpg?auto=format&dpr=1&w=384"]'
+                           data-interval="2142">
+                     </div>
 
-                  <!-- NFT 5 -->
-                  <div class="relative transform transition-transform duration-300 ease-in-out">
-                     <img class="w-full h-48 object-cover"
-                        src="https://i.seadn.io/gcs/files/54ccf1f0313fe56ac12f88ccda65e370.jpg?auto=format&dpr=1&w=384"
-                        alt="NFT 5" id="nft5"
-                        data-images='["https://i.seadn.io/gcs/files/54ccf1f0313fe56ac12f88ccda65e370.jpg?auto=format&dpr=1&w=384", "https://i.seadn.io/gae/j6vaFgKpmMZjrTHQ8wUn4zCYrjxFdHwUd_0UXA_eVq5N6pgqzyjj5NfT3Y9ujPsma_l6eviQEct-zS47Hv2cIXyJdw9fmf5KNYgr?auto=format&dpr=1&w=384"]'
-                        data-interval="2973">
-                  </div>
+                     <!-- NFT 5 -->
+                     <div class="relative transform transition-transform duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                           src="https://i.seadn.io/gcs/files/54ccf1f0313fe56ac12f88ccda65e370.jpg?auto=format&dpr=1&w=384"
+                           alt="NFT 5" id="nft5"
+                           data-images='["https://i.seadn.io/gcs/files/54ccf1f0313fe56ac12f88ccda65e370.jpg?auto=format&dpr=1&w=384", "https://i.seadn.io/gae/j6vaFgKpmMZjrTHQ8wUn4zCYrjxFdHwUd_0UXA_eVq5N6pgqzyjj5NfT3Y9ujPsma_l6eviQEct-zS47Hv2cIXyJdw9fmf5KNYgr?auto=format&dpr=1&w=384"]'
+                           data-interval="2973">
+                     </div>
 
-                  <!-- NFT 6 -->
-                  <div class="relative transform transition-transform duration-300 ease-in-out">
-                     <img class="w-full h-48 object-cover"
-                        src="https://i.seadn.io/s/raw/files/901755549c35ab54824e57c4115dd694.png?auto=format&dpr=1&w=384"
-                        alt="NFT 6" id="nft6"
-                        data-images='["https://i.seadn.io/s/raw/files/901755549c35ab54824e57c4115dd694.png?auto=format&dpr=1&w=384", "https://i.seadn.io/gcs/files/c8902732a84c2a9323b2495aef9494f3.png?auto=format&dpr=1&w=384"]'
-                        data-interval="2666">
+                     <!-- NFT 6 -->
+                     <div class="relative transform transition-transform duration-300 ease-in-out">
+                        <img class="w-full h-48 object-cover"
+                           src="https://i.seadn.io/s/raw/files/901755549c35ab54824e57c4115dd694.png?auto=format&dpr=1&w=384"
+                           alt="NFT 6" id="nft6"
+                           data-images='["https://i.seadn.io/s/raw/files/901755549c35ab54824e57c4115dd694.png?auto=format&dpr=1&w=384", "https://i.seadn.io/gcs/files/c8902732a84c2a9323b2495aef9494f3.png?auto=format&dpr=1&w=384"]'
+                           data-interval="2666">
+                     </div>
                   </div>
                </div>
-            </div>
 
 
-            <!-- Content -->
-            <div class="mt-10 lg:mt-0">
-               <!-- Heading with Background Color for Specific Text -->
-               <h2 class="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight">
-                  Discover and Trade
-               </h2>
-               <h2 class="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight mt-2"><span id="typed-text"
-                     class="text-light-sand bg-purple-primary px-2 py-2">
-                  </span>
-                  Anytime</h2>
+               <!-- Content -->
+               <div class="mt-10 lg:mt-0">
+                  <!-- Heading with Background Color for Specific Text -->
+                  <h2 class="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight">
+                     Discover and Trade
+                  </h2>
+                  <h2 class="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight mt-2"><span id="typed-text"
+                        class="text-light-sand bg-purple-primary px-2 py-2">
+                     </span>
+                     Anytime</h2>
 
-               <p class="mt-4 text-lg text-gray-500">
-                  At NiftyChain, we provide a cutting-edge platform to explore and trade digital assets. Find exclusive
-                  NFTs, engage with artists, and become part of a thriving digital economy.
-               </p>
-               <dl class="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3">
-                  <div>
-                     <dt class="text-base font-medium text-gray-500">NFTs Listed</dt>
-                     <dd class="mt-1 text-2xl font-extrabold text-purple-primary sm:text-3xl">5000+</dd>
-                  </div>
-                  <div>
-                     <dt class="text-base font-medium text-gray-500">Artists</dt>
-                     <dd class="mt-1 text-2xl font-extrabold text-purple-primary sm:text-3xl">1000+</dd>
-                  </div>
-                  <div>
-                     <dt class="text-base font-medium text-gray-500">Transactions</dt>
-                     <dd class="mt-1 text-2xl font-extrabold text-purple-primary sm:text-3xl">20000+</dd>
-                  </div>
-               </dl>
+                  <p class="mt-4 text-lg text-gray-500">
+                     At NiftyChain, we provide a cutting-edge platform to explore and trade digital assets. Find
+                     exclusive
+                     NFTs, engage with artists, and become part of a thriving digital economy.
+                  </p>
+                  <dl class="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3">
+                     <div>
+                        <dt class="text-base font-medium text-gray-500">NFTs Listed</dt>
+                        <dd class="mt-1 text-2xl font-extrabold text-purple-primary sm:text-3xl">5000+</dd>
+                     </div>
+                     <div>
+                        <dt class="text-base font-medium text-gray-500">Artists</dt>
+                        <dd class="mt-1 text-2xl font-extrabold text-purple-primary sm:text-3xl">1000+</dd>
+                     </div>
+                     <div>
+                        <dt class="text-base font-medium text-gray-500">Transactions</dt>
+                        <dd class="mt-1 text-2xl font-extrabold text-purple-primary sm:text-3xl">20000+</dd>
+                     </div>
+                  </dl>
+               </div>
             </div>
          </div>
       </div>
    </section>
    <!-- HERO SECTION ENDED -->
 
-   <br>
-   <br>
-
    <!-- TRUSTED BY SECTION STARTED -->
-   <div class="bg-light-sand font-englebert scroll-fade-in">
-      <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-         <p class="text-center text-4xl font-bold uppercase text-gray-900 tracking-wider">Trusted by <span
-               class="text-purple-primary">over 5</span>
-            cryptocurrencies <span class="text-purple-primary">exchanges</span></p>
-         <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8 border-2 border-purple-primary">
-            <div class="col-span-1 flex justify-center py-8 px-8">
-               <img class="max-h-12 object-cover"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Binance_logo.svg/948px-Binance_logo.svg.png?20180320203109"
-                  alt="Binance">
-            </div>
-            <div class="col-span-1 flex justify-center py-8 px-8">
-               <img class="max-h-12"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/640px-Coinbase.svg.png"
-                  alt="Coinase">
-            </div>
-            <div class="col-span-1 flex justify-center py-8 px-8">
-               <img class="max-h-12"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/WazirX_Logo.svg/640px-WazirX_Logo.svg.png"
-                  alt="Wazirx">
-            </div>
-            <div class="col-span-1 flex justify-center py-8 px-8">
-               <img class="max-h-12"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Bybit_Logo.svg/640px-Bybit_Logo.svg.png"
-                  alt="Bybit">
-            </div>
-            <div class="col-span-1 flex justify-center py-8 px-8">
-               <img class="max-h-12"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/KUCOIN.svg/640px-KUCOIN.svg.png"
-                  alt="Kucoin">
-            </div>
-            <div class="col-span-1 flex justify-center py-8 px-8">
-               <img class="max-h-12"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Bitstamp_logo.svg/640px-Bitstamp_logo.svg.png"
-                  alt="Bitstamp">
+   <div class=" font-englebert scroll-fade-in">
+      <div id="trusted-bg" class="vanta-background"></div>
+
+      <div class="section-content">
+         <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <p class="text-center text-4xl font-bold uppercase text-gray-900 tracking-wider">Trusted by <span
+                  class="text-purple-primary">over 5</span>
+               cryptocurrencies <span class="text-purple-primary">exchanges</span></p>
+            <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8 border-2 border-purple-primary">
+               <div class="col-span-1 flex justify-center py-8 px-8">
+                  <img class="max-h-12 object-cover"
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Binance_logo.svg/948px-Binance_logo.svg.png?20180320203109"
+                     alt="Binance">
+               </div>
+               <div class="col-span-1 flex justify-center py-8 px-8">
+                  <img class="max-h-12"
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/640px-Coinbase.svg.png"
+                     alt="Coinase">
+               </div>
+               <div class="col-span-1 flex justify-center py-8 px-8">
+                  <img class="max-h-12"
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/WazirX_Logo.svg/640px-WazirX_Logo.svg.png"
+                     alt="Wazirx">
+               </div>
+               <div class="col-span-1 flex justify-center py-8 px-8">
+                  <img class="max-h-12"
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Bybit_Logo.svg/640px-Bybit_Logo.svg.png"
+                     alt="Bybit">
+               </div>
+               <div class="col-span-1 flex justify-center py-8 px-8">
+                  <img class="max-h-12"
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/KUCOIN.svg/640px-KUCOIN.svg.png"
+                     alt="Kucoin">
+               </div>
+               <div class="col-span-1 flex justify-center py-8 px-8">
+                  <img class="max-h-12"
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Bitstamp_logo.svg/640px-Bitstamp_logo.svg.png"
+                     alt="Bitstamp">
+               </div>
             </div>
          </div>
       </div>
@@ -497,344 +508,351 @@
    <!-- TRUSTED BY SECTION ENDED -->
 
    <!-- TRENDING AUCTION SECTION STARTED -->
-   <div class="bg-gray-100 font-englebert scroll-fade-in">
-      <div class="max-w-screen-xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-         <div class="flex items-center justify-between space-x-4">
-            <h2 class="text-4xl font-bold bg-purple-primary text-light-sand px-4 py-2">Trending Auction</h2>
-            <div class="flex space-x-2">
-               <button id="prevBtn" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                     class="h-6 w-6">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                  </svg>
-               </button>
-               <button id="nextBtn" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                     class="h-6 w-6">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
-               </button>
+   <div class="font-englebert scroll-fade-in">
+      <div id="collections-bg" class="vanta-background"></div>
+      <div class="section-content">
+         <div class="max-w-screen-xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+            <div class="flex items-center justify-between space-x-4">
+               <h2 class="text-4xl font-bold bg-purple-primary text-light-sand px-4 py-2">Trending Auction</h2>
+               <div class="flex space-x-2">
+                  <button id="prevBtn" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                     </svg>
+                  </button>
+                  <button id="nextBtn" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                     </svg>
+                  </button>
+               </div>
             </div>
-         </div>
 
-         <div class="mt-5 relative">
-            <div id="nftSlider" class="flex overflow-x-auto scroll-smooth space-x-4 pb-3">
-               <!-- NFT Item 1 -->
-               <div class="flex-none w-80">
-                  <div class="relative group">
-                     <div class="p-4 flex items-center bg-white">
-                        <a href="/dist/pages/nft-detail.html">
+            <div class="mt-5 relative">
+               <div id="nftSlider" class="flex overflow-x-auto scroll-smooth space-x-4 pb-3">
+                  <!-- NFT Item 1 -->
+                  <div class="flex-none w-80">
+                     <div class="relative group">
+                        <div class="p-4 flex items-center bg-white">
+                           <a href="/dist/pages/nft-detail.html">
+                              <img
+                                 src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=136&h=136&fr=1"
+                                 alt="Developer PFP" class="w-10 h-10 rounded-full mr-4">
+                           </a>
+                           <p class="text-xl font-semibold flex items-center">
+                              Beanz Official
+                              <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                                 stroke="#002aff" width="16" height="16" class="ml-2">
+                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                 <g id="SVGRepo_iconCarrier">
+                                    <style type="text/css">
+                                       .st0 {
+                                          fill: none;
+                                       }
+                                    </style>
+                                    <path
+                                       d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                                    </path>
+                                 </g>
+                              </svg>
+                           </p>
+                        </div>
+                        <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-gray-100 px-4">
                            <img
-                              src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=136&h=136&fr=1"
+                              src="https://i.seadn.io/gcs/files/3378c78827e23089c1e7b2ebbd89548c.png?auto=format&dpr=1&w=1000"
+                              alt="NFT 1"
+                              class="object-center object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-4 bg-white">
+                           <h3 class="text-xl font-black text-gray-900">
+                              <a href="/dist/pages/nft-detail.html" class="hover:underline">
+                                 <span aria-hidden="true" class="absolute inset-0"></span>
+                                 Bean #19440
+                              </a>
+                           </h3>
+                           <div class="flex items-center mt-2 justify-between">
+                              <span class="text-sm font-medium text-gray-500">Current Bid</span>
+                              <span class="text-sm font-medium text-gray-500">Remaining Time</span>
+                           </div>
+                           <div class="flex items-center mt-4 justify-between">
+                              <p class="text-lg font-semibold flex items-center">
+                                 <svg viewBox="-80.5 0 417 417" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    width="18" class="mr-2" height="18" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                       <g>
+                                          <polygon fill="#343434"
+                                             points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
+                                          </polygon>
+                                          <polygon fill="#8C8C8C"
+                                             points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"> </polygon>
+                                          <polygon fill="#3C3C3B"
+                                             points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
+                                          </polygon>
+                                          <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852">
+                                          </polygon>
+                                          <polygon fill="#141414"
+                                             points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"> </polygon>
+                                          <polygon fill="#393939"
+                                             points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"> </polygon>
+                                       </g>
+                                    </g>
+                                 </svg>
+                                 <span class="tracking-widest mr-1">2.5 </span> ETH
+                              </p>
+                              <div
+                                 class="circle text-light-sand bg-purple-primary p-2 flex items-center justify-center">
+                                 <span class="time" data-duration="50400">00:00:00</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- NFT Item 2 -->
+                  <div class="flex-none w-80">
+                     <div class="relative group">
+                        <div class="p-4 flex items-center bg-white">
+                           <img
+                              src="https://i.seadn.io/s/raw/files/2c0be4245bba8731ad66c50ee6f782a5.gif?auto=format&dpr=1&w=48"
                               alt="Developer PFP" class="w-10 h-10 rounded-full mr-4">
-                        </a>
-                        <p class="text-xl font-semibold flex items-center">
-                           Beanz Official
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16" class="ml-2">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-                     </div>
-                     <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-gray-100 px-4">
-                        <img
-                           src="https://i.seadn.io/gcs/files/3378c78827e23089c1e7b2ebbd89548c.png?auto=format&dpr=1&w=1000"
-                           alt="NFT 1"
-                           class="object-center object-cover transition-transform duration-500 group-hover:scale-105">
-                     </div>
-                     <div class="p-4 bg-white">
-                        <h3 class="text-xl font-black text-gray-900">
-                           <a href="/dist/pages/nft-detail.html" class="hover:underline">
-                              <span aria-hidden="true" class="absolute inset-0"></span>
-                              Bean #19440
-                           </a>
-                        </h3>
-                        <div class="flex items-center mt-2 justify-between">
-                           <span class="text-sm font-medium text-gray-500">Current Bid</span>
-                           <span class="text-sm font-medium text-gray-500">Remaining Time</span>
-                        </div>
-                        <div class="flex items-center mt-4 justify-between">
-                           <p class="text-lg font-semibold flex items-center">
-                              <svg viewBox="-80.5 0 417 417" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18"
-                                 class="mr-2" height="18" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 preserveAspectRatio="xMidYMid" fill="#000000">
+                           <p class="text-xl font-semibold flex items-center">
+                              Mr. Milady Miggles
+                              <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                                 stroke="#002aff" width="16" height="16" class="ml-2">
                                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                  <g id="SVGRepo_iconCarrier">
-                                    <g>
-                                       <polygon fill="#343434"
-                                          points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
-                                       </polygon>
-                                       <polygon fill="#8C8C8C"
-                                          points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"> </polygon>
-                                       <polygon fill="#3C3C3B"
-                                          points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
-                                       </polygon>
-                                       <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852">
-                                       </polygon>
-                                       <polygon fill="#141414"
-                                          points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"> </polygon>
-                                       <polygon fill="#393939"
-                                          points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"> </polygon>
-                                    </g>
+                                    <style type="text/css">
+                                       .st0 {
+                                          fill: none;
+                                       }
+                                    </style>
+                                    <path
+                                       d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                                    </path>
                                  </g>
                               </svg>
-                              <span class="tracking-widest mr-1">2.5 </span> ETH
                            </p>
-                           <div class="circle text-light-sand bg-purple-primary p-2 flex items-center justify-center">
-                              <span class="time" data-duration="50400">00:00:00</span>
+                        </div>
+                        <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-gray-100 px-4">
+                           <img
+                              src="https://i.seadn.io/s/raw/files/95f32dc39c4579cd20e44e2462640314.png?auto=format&dpr=1&w=1000"
+                              alt="NFT 2"
+                              class="object-center object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-4 bg-white">
+                           <h3 class="text-xl font-black text-gray-900">
+                              <a href="#">
+                                 <span aria-hidden="true" class="absolute inset-0"></span>
+                                 Mr. Milady Miggle #2540
+                              </a>
+                           </h3>
+                           <div class="flex items-center mt-2 justify-between">
+                              <span class="text-sm font-medium text-gray-500">Current Bid</span>
+                              <span class="text-sm font-medium text-gray-500">Remaining Time</span>
+                           </div>
+                           <div class="flex items-center mt-4 justify-between">
+                              <p class="text-lg font-semibold flex items-center">
+                                 <svg viewBox="-80.5 0 417 417" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    width="18" class="mr-2" height="18" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                       <g>
+                                          <polygon fill="#343434"
+                                             points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
+                                          </polygon>
+                                          <polygon fill="#8C8C8C"
+                                             points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"> </polygon>
+                                          <polygon fill="#3C3C3B"
+                                             points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
+                                          </polygon>
+                                          <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852">
+                                          </polygon>
+                                          <polygon fill="#141414"
+                                             points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"> </polygon>
+                                          <polygon fill="#393939"
+                                             points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"> </polygon>
+                                       </g>
+                                    </g>
+                                 </svg>
+                                 <span class="tracking-widest mr-1">0.5 </span> ETH
+                              </p>
+                              <div
+                                 class="circle text-light-sand bg-purple-primary p-2 flex items-center justify-center">
+                                 <span class="time" data-duration="20400">00:00:00</span>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
-               </div>
 
-               <!-- NFT Item 2 -->
-               <div class="flex-none w-80">
-                  <div class="relative group">
-                     <div class="p-4 flex items-center bg-white">
-                        <img
-                           src="https://i.seadn.io/s/raw/files/2c0be4245bba8731ad66c50ee6f782a5.gif?auto=format&dpr=1&w=48"
-                           alt="Developer PFP" class="w-10 h-10 rounded-full mr-4">
-                        <p class="text-xl font-semibold flex items-center">
-                           Mr. Milady Miggles
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16" class="ml-2">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-                     </div>
-                     <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-gray-100 px-4">
-                        <img
-                           src="https://i.seadn.io/s/raw/files/95f32dc39c4579cd20e44e2462640314.png?auto=format&dpr=1&w=1000"
-                           alt="NFT 2"
-                           class="object-center object-cover transition-transform duration-500 group-hover:scale-105">
-                     </div>
-                     <div class="p-4 bg-white">
-                        <h3 class="text-xl font-black text-gray-900">
-                           <a href="#">
-                              <span aria-hidden="true" class="absolute inset-0"></span>
-                              Mr. Milady Miggle #2540
-                           </a>
-                        </h3>
-                        <div class="flex items-center mt-2 justify-between">
-                           <span class="text-sm font-medium text-gray-500">Current Bid</span>
-                           <span class="text-sm font-medium text-gray-500">Remaining Time</span>
-                        </div>
-                        <div class="flex items-center mt-4 justify-between">
-                           <p class="text-lg font-semibold flex items-center">
-                              <svg viewBox="-80.5 0 417 417" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18"
-                                 class="mr-2" height="18" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 preserveAspectRatio="xMidYMid" fill="#000000">
+                  <!-- NFT Item 3 -->
+                  <div class="flex-none w-80">
+                     <div class="relative group">
+                        <div class="p-4 flex items-center bg-white">
+                           <img
+                              src="https://i.seadn.io/s/raw/files/45576e2092a2ac7ddcd7b83bcb12ef71.jpg?auto=format&dpr=1&w=384"
+                              alt="Developer PFP" class="w-10 h-10 rounded-full mr-4">
+                           <p class="text-xl font-semibold flex items-center">
+                              Cryptomnesia
+                              <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                                 stroke="#002aff" width="16" height="16" class="ml-2">
                                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                  <g id="SVGRepo_iconCarrier">
-                                    <g>
-                                       <polygon fill="#343434"
-                                          points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
-                                       </polygon>
-                                       <polygon fill="#8C8C8C"
-                                          points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"> </polygon>
-                                       <polygon fill="#3C3C3B"
-                                          points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
-                                       </polygon>
-                                       <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852">
-                                       </polygon>
-                                       <polygon fill="#141414"
-                                          points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"> </polygon>
-                                       <polygon fill="#393939"
-                                          points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"> </polygon>
-                                    </g>
+                                    <style type="text/css">
+                                       .st0 {
+                                          fill: none;
+                                       }
+                                    </style>
+                                    <path
+                                       d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                                    </path>
                                  </g>
                               </svg>
-                              <span class="tracking-widest mr-1">0.5 </span> ETH
                            </p>
-                           <div class="circle text-light-sand bg-purple-primary p-2 flex items-center justify-center">
-                              <span class="time" data-duration="20400">00:00:00</span>
+                        </div>
+                        <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-gray-100 px-4">
+                           <img
+                              src="https://i.seadn.io/s/raw/files/13f5201cc19519896a735fe000557a65.jpg?auto=format&dpr=1&w=384"
+                              alt="NFT 3"
+                              class="object-center object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-4 bg-white">
+                           <h3 class="text-xl font-black text-gray-900">
+                              <a href="#">
+                                 <span aria-hidden="true" class="absolute inset-0"></span>
+                                 Cryptomnesia #117
+                              </a>
+                           </h3>
+                           <div class="flex items-center mt-2 justify-between">
+                              <span class="text-sm font-medium text-gray-500">Current Bid</span>
+                              <span class="text-sm font-medium text-gray-500">Remaining Time</span>
+                           </div>
+                           <div class="flex items-center mt-4 justify-between">
+                              <p class="text-lg font-semibold flex items-center">
+                                 <svg viewBox="-80.5 0 417 417" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    width="18" class="mr-2" height="18" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                       <g>
+                                          <polygon fill="#343434"
+                                             points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
+                                          </polygon>
+                                          <polygon fill="#8C8C8C"
+                                             points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"> </polygon>
+                                          <polygon fill="#3C3C3B"
+                                             points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
+                                          </polygon>
+                                          <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852">
+                                          </polygon>
+                                          <polygon fill="#141414"
+                                             points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"> </polygon>
+                                          <polygon fill="#393939"
+                                             points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"> </polygon>
+                                       </g>
+                                    </g>
+                                 </svg>
+                                 <span class="tracking-widest mr-1">3.0 </span> ETH
+                              </p>
+                              <div
+                                 class="circle text-light-sand bg-purple-primary p-2 flex items-center justify-center">
+                                 <span class="time" data-duration="80930">00:00:00</span>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
-               </div>
 
-               <!-- NFT Item 3 -->
-               <div class="flex-none w-80">
-                  <div class="relative group">
-                     <div class="p-4 flex items-center bg-white">
-                        <img
-                           src="https://i.seadn.io/s/raw/files/45576e2092a2ac7ddcd7b83bcb12ef71.jpg?auto=format&dpr=1&w=384"
-                           alt="Developer PFP" class="w-10 h-10 rounded-full mr-4">
-                        <p class="text-xl font-semibold flex items-center">
-                           Cryptomnesia
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16" class="ml-2">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-                     </div>
-                     <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-gray-100 px-4">
-                        <img
-                           src="https://i.seadn.io/s/raw/files/13f5201cc19519896a735fe000557a65.jpg?auto=format&dpr=1&w=384"
-                           alt="NFT 3"
-                           class="object-center object-cover transition-transform duration-500 group-hover:scale-105">
-                     </div>
-                     <div class="p-4 bg-white">
-                        <h3 class="text-xl font-black text-gray-900">
-                           <a href="#">
-                              <span aria-hidden="true" class="absolute inset-0"></span>
-                              Cryptomnesia #117
-                           </a>
-                        </h3>
-                        <div class="flex items-center mt-2 justify-between">
-                           <span class="text-sm font-medium text-gray-500">Current Bid</span>
-                           <span class="text-sm font-medium text-gray-500">Remaining Time</span>
-                        </div>
-                        <div class="flex items-center mt-4 justify-between">
-                           <p class="text-lg font-semibold flex items-center">
-                              <svg viewBox="-80.5 0 417 417" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18"
-                                 class="mr-2" height="18" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 preserveAspectRatio="xMidYMid" fill="#000000">
-                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                 <g id="SVGRepo_iconCarrier">
-                                    <g>
-                                       <polygon fill="#343434"
-                                          points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
-                                       </polygon>
-                                       <polygon fill="#8C8C8C"
-                                          points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"> </polygon>
-                                       <polygon fill="#3C3C3B"
-                                          points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
-                                       </polygon>
-                                       <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852">
-                                       </polygon>
-                                       <polygon fill="#141414"
-                                          points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"> </polygon>
-                                       <polygon fill="#393939"
-                                          points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"> </polygon>
-                                    </g>
-                                 </g>
-                              </svg>
-                              <span class="tracking-widest mr-1">3.0 </span> ETH
-                           </p>
-                           <div class="circle text-light-sand bg-purple-primary p-2 flex items-center justify-center">
-                              <span class="time" data-duration="80930">00:00:00</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- NFT Item 4 -->
-               <div class="flex-none w-80">
-                  <div class="relative group">
-                     <div class="p-4 flex items-center bg-white">
-                        <img
-                           src="https://i.seadn.io/s/raw/files/6cd1ed5e5a724623be4d9d3e71a0c76a.png?auto=format&dpr=1&w=384"
-                           alt="Developer PFP" class="w-10 h-10 rounded-full mr-4">
-                        <p class="text-xl font-semibold flex items-center">
-                           Big Hugs
-                           <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                              stroke="#002aff" width="16" height="16" class="ml-2">
-                              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g id="SVGRepo_iconCarrier">
-                                 <style type="text/css">
-                                    .st0 {
-                                       fill: none;
-                                    }
-                                 </style>
-                                 <path
-                                    d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                 </path>
-                              </g>
-                           </svg>
-                        </p>
-                     </div>
-                     <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-gray-100 px-4">
-                        <img
-                           src="https://i.seadn.io/s/raw/files/0bfd4061b1a4abaca27dcc7e7e4932cb.png?auto=format&dpr=1&w=384"
-                           alt="NFT 4"
-                           class="object-center object-cover transition-transform duration-500 group-hover:scale-105">
-                     </div>
-                     <div class="p-4 bg-white">
-                        <h3 class="text-xl font-black text-gray-900">
-                           <a href="#">
-                              <span aria-hidden="true" class="absolute inset-0"></span>
+                  <!-- NFT Item 4 -->
+                  <div class="flex-none w-80">
+                     <div class="relative group">
+                        <div class="p-4 flex items-center bg-white">
+                           <img
+                              src="https://i.seadn.io/s/raw/files/6cd1ed5e5a724623be4d9d3e71a0c76a.png?auto=format&dpr=1&w=384"
+                              alt="Developer PFP" class="w-10 h-10 rounded-full mr-4">
+                           <p class="text-xl font-semibold flex items-center">
                               Big Hugs
-                           </a>
-                        </h3>
-                        <div class="flex items-center mt-2 justify-between">
-                           <span class="text-sm font-medium text-gray-500">Current Bid</span>
-                           <span class="text-sm font-medium text-gray-500">Remaining Time</span>
-                        </div>
-                        <div class="flex items-center mt-4 justify-between">
-                           <p class="text-lg font-semibold flex items-center">
-                              <svg viewBox="-80.5 0 417 417" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18"
-                                 class="mr-2" height="18" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 preserveAspectRatio="xMidYMid" fill="#000000">
+                              <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
+                                 stroke="#002aff" width="16" height="16" class="ml-2">
                                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                  <g id="SVGRepo_iconCarrier">
-                                    <g>
-                                       <polygon fill="#343434"
-                                          points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
-                                       </polygon>
-                                       <polygon fill="#8C8C8C"
-                                          points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"> </polygon>
-                                       <polygon fill="#3C3C3B"
-                                          points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
-                                       </polygon>
-                                       <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852">
-                                       </polygon>
-                                       <polygon fill="#141414"
-                                          points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"> </polygon>
-                                       <polygon fill="#393939"
-                                          points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"> </polygon>
-                                    </g>
+                                    <style type="text/css">
+                                       .st0 {
+                                          fill: none;
+                                       }
+                                    </style>
+                                    <path
+                                       d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                                    </path>
                                  </g>
                               </svg>
-                              <span class="tracking-widest mr-1">0.02 </span> ETH
                            </p>
-                           <div class="circle text-light-sand bg-purple-primary p-2 flex items-center justify-center">
-                              <span class="time" data-duration="29930">00:00:00</span>
+                        </div>
+                        <div class="aspect-w-4 aspect-h-3 overflow-hidden bg-gray-100 px-4">
+                           <img
+                              src="https://i.seadn.io/s/raw/files/0bfd4061b1a4abaca27dcc7e7e4932cb.png?auto=format&dpr=1&w=384"
+                              alt="NFT 4"
+                              class="object-center object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-4 bg-white">
+                           <h3 class="text-xl font-black text-gray-900">
+                              <a href="#">
+                                 <span aria-hidden="true" class="absolute inset-0"></span>
+                                 Big Hugs
+                              </a>
+                           </h3>
+                           <div class="flex items-center mt-2 justify-between">
+                              <span class="text-sm font-medium text-gray-500">Current Bid</span>
+                              <span class="text-sm font-medium text-gray-500">Remaining Time</span>
+                           </div>
+                           <div class="flex items-center mt-4 justify-between">
+                              <p class="text-lg font-semibold flex items-center">
+                                 <svg viewBox="-80.5 0 417 417" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    width="18" class="mr-2" height="18" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                       <g>
+                                          <polygon fill="#343434"
+                                             points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
+                                          </polygon>
+                                          <polygon fill="#8C8C8C"
+                                             points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"> </polygon>
+                                          <polygon fill="#3C3C3B"
+                                             points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
+                                          </polygon>
+                                          <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852">
+                                          </polygon>
+                                          <polygon fill="#141414"
+                                             points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"> </polygon>
+                                          <polygon fill="#393939"
+                                             points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"> </polygon>
+                                       </g>
+                                    </g>
+                                 </svg>
+                                 <span class="tracking-widest mr-1">0.02 </span> ETH
+                              </p>
+                              <div
+                                 class="circle text-light-sand bg-purple-primary p-2 flex items-center justify-center">
+                                 <span class="time" data-duration="29930">00:00:00</span>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -847,257 +865,260 @@
    <!-- TRENDING AUCTION SECTION ENDED -->
 
    <!-- TRENDING COLLECTIONS SECTION STARTED -->
-   <section class="py-12 bg-purple-primary font-englebert scroll-fade-in">
-      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-         <h1
-            class="text-4xl font-bold border-2 border-black text-purple-primary bg-light-sand px-4 py-2 mb-8 text-center">
-            Trending
-            Collections</h1>
-         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Left Side -->
-            <div class="overflow-x-auto overflow-y-hidden">
-               <table class="min-w-max">
-                  <thead>
-                     <tr>
-                        <th class="py-1 pr-3 text-left text-xl font-bold text-gray-50">Rank</th>
-                        <th class="py-1 text-left text-xl font-bold text-gray-50">Collection</th>
-                        <th class="py-1 text-left text-xl font-bold text-gray-50">Floor</th>
-                        <th class="py-1 text-left text-xl font-bold text-gray-50">Volume</th>
-                        <th class="py-1 text-left text-xl font-bold text-gray-50">7d Chart</th>
-                     </tr>
-                  </thead>
-                  <tbody class="text-gray-50">
-                     <tr class="transition duration-150">
-                        <td class="py-2 px-3 align-middle text-lg">1</td>
-                        <td class="py-2 px-2">
-                           <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10 w-10">
-                                 <img
-                                    src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=136&h=136&fr=1"
-                                    alt="Beanz Official" class="h-10 w-10 rounded-full object-cover">
+   <section class="py-12 font-englebert scroll-fade-in">
+      <div id="auction-bg" class="vanta-background"></div>
+      <dic class="section-content">
+         <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1
+               class="text-4xl font-bold border-2 border-black text-purple-primary bg-light-sand px-4 py-2 mb-8 text-center">
+               Trending
+               Collections</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+               <!-- Left Side -->
+               <div class="overflow-x-auto overflow-y-hidden">
+                  <table class="min-w-max">
+                     <thead>
+                        <tr>
+                           <th class="py-1 pr-3 text-left text-xl font-bold text-gray-900">Rank</th>
+                           <th class="py-1 text-left text-xl font-bold text-gray-900">Collection</th>
+                           <th class="py-1 text-left text-xl font-bold text-gray-900">Floor</th>
+                           <th class="py-1 text-left text-xl font-bold text-gray-900">Volume</th>
+                           <th class="py-1 text-left text-xl font-bold text-gray-900">7d Chart</th>
+                        </tr>
+                     </thead>
+                     <tbody class="text-gray-900">
+                        <tr class="transition duration-150">
+                           <td class="py-2 px-3 align-middle text-lg">1</td>
+                           <td class="py-2 px-2">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0 h-10 w-10">
+                                    <img
+                                       src="https://i.seadn.io/gae/_R4fuC4QGYd14-KwX2bD1wf-AWjDF2VMabfqWFJhIgiN2FnAUpnD5PLdJORrhQ8gly7KcjhQZZpuzYVPF7CDSzsqmDh97z84j2On?auto=format&dpr=1&w=136&h=136&fr=1"
+                                       alt="Beanz Official" class="h-10 w-10 rounded-full object-cover">
+                                 </div>
+                                 <div class="ml-4 flex items-center">
+                                    <div class="text-lg font-medium text-gray-900">Beanz Official</div>
+                                    <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                       xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                       xml:space="preserve" stroke="#002aff" width="16" height="16" class="ml-2">
+                                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                       <g id="SVGRepo_iconCarrier">
+                                          <style type="text/css">
+                                             .st0 {
+                                                fill: none;
+                                             }
+                                          </style>
+                                          <path
+                                             d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                                          </path>
+                                       </g>
+                                    </svg>
+                                 </div>
                               </div>
-                              <div class="ml-4 flex items-center">
-                                 <div class="text-lg font-medium text-gray-50">Beanz Official</div>
-                                 <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                                    stroke="#002aff" width="16" height="16" class="ml-2">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <style type="text/css">
-                                          .st0 {
-                                             fill: none;
-                                          }
-                                       </style>
-                                       <path
-                                          d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                       </path>
-                                    </g>
-                                 </svg>
-                              </div>
-                           </div>
-                        </td>
-                        <td class="py-2 px-2 align-middle text-lg">0.5 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">100 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">
-                           <div id="area-chart1" class="area-chart"></div>
-                        </td>
-                     </tr>
+                           </td>
+                           <td class="py-2 px-2 align-middle text-lg">0.5 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">100 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">
+                              <div id="area-chart1" class="area-chart"></div>
+                           </td>
+                        </tr>
 
-                     <tr class="transition duration-150">
-                        <td class="py-2 px-3 align-middle text-lg">2</td>
-                        <td class="py-2 px-2">
-                           <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10 w-10">
-                                 <img
-                                    src="https://i.seadn.io/gae/aITOppXWvfLhdRq4gUL5kkQ2Li0ljfWOAveam2wQy_znEa7WWI7Ci1mbSE6-DIVQl1MNxuAaYWx2wsVAv_IU7PpL-DfWWrZ60Tv6fw?auto=format&dpr=1&w=256"
-                                    alt="My Pet Hooligans" class="h-10 w-10 rounded-full object-cover">
+                        <tr class="transition duration-150">
+                           <td class="py-2 px-3 align-middle text-lg">2</td>
+                           <td class="py-2 px-2">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0 h-10 w-10">
+                                    <img
+                                       src="https://i.seadn.io/gae/aITOppXWvfLhdRq4gUL5kkQ2Li0ljfWOAveam2wQy_znEa7WWI7Ci1mbSE6-DIVQl1MNxuAaYWx2wsVAv_IU7PpL-DfWWrZ60Tv6fw?auto=format&dpr=1&w=256"
+                                       alt="My Pet Hooligans" class="h-10 w-10 rounded-full object-cover">
+                                 </div>
+                                 <div class="ml-4 flex items-center">
+                                    <div class="text-lg font-medium text-gray-900">My Pet Hooligans</div>
+                                 </div>
                               </div>
-                              <div class="ml-4 flex items-center">
-                                 <div class="text-lg font-medium text-gray-50">My Pet Hooligans</div>
-                              </div>
-                           </div>
-                        </td>
-                        <td class="py-2 px-2 align-middle text-lg">0.8 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">30 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">
-                           <div id="area-chart2" class="area-chart"></div>
-                        </td>
-                     </tr>
+                           </td>
+                           <td class="py-2 px-2 align-middle text-lg">0.8 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">30 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">
+                              <div id="area-chart2" class="area-chart"></div>
+                           </td>
+                        </tr>
 
-                     <tr class="transition duration-150">
-                        <td class="py-2 px-3 align-middle text-lg">3</td>
-                        <td class="py-2 px-2">
-                           <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10 w-10">
-                                 <img
-                                    src="https://i.seadn.io/s/raw/files/0b6b937e62ff764713c2961af0b5e80b.png?auto=format&dpr=1&w=136&h=136&fr=1"
-                                    alt="Persona" class="h-10 w-10 rounded-full object-cover">
+                        <tr class="transition duration-150">
+                           <td class="py-2 px-3 align-middle text-lg">3</td>
+                           <td class="py-2 px-2">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0 h-10 w-10">
+                                    <img
+                                       src="https://i.seadn.io/s/raw/files/0b6b937e62ff764713c2961af0b5e80b.png?auto=format&dpr=1&w=136&h=136&fr=1"
+                                       alt="Persona" class="h-10 w-10 rounded-full object-cover">
+                                 </div>
+                                 <div class="ml-4 flex items-center">
+                                    <div class="text-lg font-medium text-gray-900">Persona</div>
+                                 </div>
                               </div>
-                              <div class="ml-4 flex items-center">
-                                 <div class="text-lg font-medium text-gray-50">Persona</div>
-                              </div>
-                           </div>
-                        </td>
-                        <td class="py-2 px-2 align-middle text-lg">1.2 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">12 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">
-                           <div id="area-chart3" class="area-chart"></div>
-                        </td>
-                     </tr>
+                           </td>
+                           <td class="py-2 px-2 align-middle text-lg">1.2 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">12 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">
+                              <div id="area-chart3" class="area-chart"></div>
+                           </td>
+                        </tr>
 
-                     <tr class="transition duration-150">
-                        <td class="py-2 px-3 align-middle text-lg">4</td>
-                        <td class="py-2 px-2">
-                           <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10 w-10">
-                                 <img
-                                    src="https://i.seadn.io/gcs/files/bbaf43ee4a02d5affb7e8fc186d0bdb5.png?auto=format&dpr=1&w=136&h=136&fr=1"
-                                    alt="Azuki elementals" class="h-10 w-10 rounded-full object-cover">
+                        <tr class="transition duration-150">
+                           <td class="py-2 px-3 align-middle text-lg">4</td>
+                           <td class="py-2 px-2">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0 h-10 w-10">
+                                    <img
+                                       src="https://i.seadn.io/gcs/files/bbaf43ee4a02d5affb7e8fc186d0bdb5.png?auto=format&dpr=1&w=136&h=136&fr=1"
+                                       alt="Azuki elementals" class="h-10 w-10 rounded-full object-cover">
+                                 </div>
+                                 <div class="ml-4 flex items-center">
+                                    <div class="text-lg font-medium text-gray-900">Azuki Elementals</div>
+                                    <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                       xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                       xml:space="preserve" stroke="#002aff" width="16" height="16" class="ml-2">
+                                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                       <g id="SVGRepo_iconCarrier">
+                                          <style type="text/css">
+                                             .st0 {
+                                                fill: none;
+                                             }
+                                          </style>
+                                          <path
+                                             d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                                          </path>
+                                       </g>
+                                    </svg>
+                                 </div>
                               </div>
-                              <div class="ml-4 flex items-center">
-                                 <div class="text-lg font-medium text-gray-50">Azuki Elementals</div>
-                                 <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                                    stroke="#002aff" width="16" height="16" class="ml-2">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <style type="text/css">
-                                          .st0 {
-                                             fill: none;
-                                          }
-                                       </style>
-                                       <path
-                                          d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                       </path>
-                                    </g>
-                                 </svg>
-                              </div>
-                           </div>
-                        </td>
-                        <td class="py-2 px-2 align-middle text-lg">2 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">300 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">
-                           <div id="area-chart4" class="area-chart"></div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-            <!-- Right Side -->
-            <div class="overflow-x-auto overflow-y-hidden">
-               <table class="min-w-max">
-                  <thead>
-                     <tr>
-                        <th class="py-1 pr-3 text-left text-xl font-bold text-gray-50">Rank</th>
-                        <th class="py-1 text-left text-xl font-bold text-gray-50">Collection</th>
-                        <th class="py-1 text-left text-xl font-bold text-gray-50">Floor</th>
-                        <th class="py-1 text-left text-xl font-bold text-gray-50">Volume</th>
-                        <th class="py-1 text-left text-xl font-bold text-gray-50">7d Chart</th>
-                     </tr>
-                  </thead>
-                  <tbody class="text-gray-50">
+                           </td>
+                           <td class="py-2 px-2 align-middle text-lg">2 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">300 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">
+                              <div id="area-chart4" class="area-chart"></div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <!-- Right Side -->
+               <div class="overflow-x-auto overflow-y-hidden">
+                  <table class="min-w-max">
+                     <thead>
+                        <tr>
+                           <th class="py-1 pr-3 text-left text-xl font-bold text-gray-900">Rank</th>
+                           <th class="py-1 text-left text-xl font-bold text-gray-900">Collection</th>
+                           <th class="py-1 text-left text-xl font-bold text-gray-900">Floor</th>
+                           <th class="py-1 text-left text-xl font-bold text-gray-900">Volume</th>
+                           <th class="py-1 text-left text-xl font-bold text-gray-900">7d Chart</th>
+                        </tr>
+                     </thead>
+                     <tbody class="text-gray-900">
 
-                     <tr class="transition duration-150">
-                        <td class="py-2 px-3 align-middle text-lg">5</td>
-                        <td class="py-2 px-2">
-                           <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10 w-10">
-                                 <img
-                                    src="https://i.seadn.io/s/raw/files/866ed37820afd3d81fd2d942edbe5c0d.jpg?auto=format&dpr=1&w=136&h=136&fr=1"
-                                    alt="Rumble Kong" class="h-10 w-10 rounded-full object-cover">
+                        <tr class="transition duration-150">
+                           <td class="py-2 px-3 align-middle text-lg">5</td>
+                           <td class="py-2 px-2">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0 h-10 w-10">
+                                    <img
+                                       src="https://i.seadn.io/s/raw/files/866ed37820afd3d81fd2d942edbe5c0d.jpg?auto=format&dpr=1&w=136&h=136&fr=1"
+                                       alt="Rumble Kong" class="h-10 w-10 rounded-full object-cover">
+                                 </div>
+                                 <div class="ml-4 flex items-center">
+                                    <div class="text-lg font-medium text-gray-900">Rumble Kong League</div>
+                                    <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                       xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                       xml:space="preserve" stroke="#002aff" width="16" height="16" class="ml-2">
+                                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                       <g id="SVGRepo_iconCarrier">
+                                          <style type="text/css">
+                                             .st0 {
+                                                fill: none;
+                                             }
+                                          </style>
+                                          <path
+                                             d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                                          </path>
+                                       </g>
+                                    </svg>
+                                 </div>
                               </div>
-                              <div class="ml-4 flex items-center">
-                                 <div class="text-lg font-medium text-gray-50">Rumble Kong League</div>
-                                 <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                                    stroke="#002aff" width="16" height="16" class="ml-2">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <style type="text/css">
-                                          .st0 {
-                                             fill: none;
-                                          }
-                                       </style>
-                                       <path
-                                          d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                       </path>
-                                    </g>
-                                 </svg>
-                              </div>
-                           </div>
-                        </td>
-                        <td class="py-2 px-2 align-middle text-lg">0.2 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">27 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">
-                           <div id="area-chart5" class="area-chart"></div>
-                        </td>
-                     </tr>
+                           </td>
+                           <td class="py-2 px-2 align-middle text-lg">0.2 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">27 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">
+                              <div id="area-chart5" class="area-chart"></div>
+                           </td>
+                        </tr>
 
-                     <tr class="transition duration-150">
-                        <td class="py-2 px-3 align-middle text-lg">6</td>
-                        <td class="py-2 px-2">
-                           <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10 w-10">
-                                 <img
-                                    src="https://i.seadn.io/s/raw/files/7e6fad40382fc62e13653ca7b1a6e0c7.jpg?auto=format&dpr=1&w=136&h=136&fr=1"
-                                    alt="DeGods" class="h-10 w-10 rounded-full object-cover">
+                        <tr class="transition duration-150">
+                           <td class="py-2 px-3 align-middle text-lg">6</td>
+                           <td class="py-2 px-2">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0 h-10 w-10">
+                                    <img
+                                       src="https://i.seadn.io/s/raw/files/7e6fad40382fc62e13653ca7b1a6e0c7.jpg?auto=format&dpr=1&w=136&h=136&fr=1"
+                                       alt="DeGods" class="h-10 w-10 rounded-full object-cover">
+                                 </div>
+                                 <div class="ml-4 flex items-center">
+                                    <div class="text-lg font-medium text-gray-900">DeGods</div>
+                                    <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                       xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                                       xml:space="preserve" stroke="#002aff" width="16" height="16" class="ml-2">
+                                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                       <g id="SVGRepo_iconCarrier">
+                                          <style type="text/css">
+                                             .st0 {
+                                                fill: none;
+                                             }
+                                          </style>
+                                          <path
+                                             d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
+                                          </path>
+                                       </g>
+                                    </svg>
+                                 </div>
                               </div>
-                              <div class="ml-4 flex items-center">
-                                 <div class="text-lg font-medium text-gray-50">DeGods</div>
-                                 <svg fill="#002aff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"
-                                    stroke="#002aff" width="16" height="16" class="ml-2">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                       <style type="text/css">
-                                          .st0 {
-                                             fill: none;
-                                          }
-                                       </style>
-                                       <path
-                                          d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M10.8,16.8l-3.7-3.7l1.4-1.4l2.2,2.2l5.8-6.1L18,9.3 L10.8,16.8z">
-                                       </path>
-                                    </g>
-                                 </svg>
-                              </div>
-                           </div>
-                        </td>
-                        <td class="py-2 px-2 align-middle text-lg">0.5 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">17 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">
-                           <div id="area-chart6" class="area-chart"></div>
-                        </td>
-                     </tr>
+                           </td>
+                           <td class="py-2 px-2 align-middle text-lg">0.5 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">17 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">
+                              <div id="area-chart6" class="area-chart"></div>
+                           </td>
+                        </tr>
 
-                     <tr class="transition duration-150">
-                        <td class="py-2 px-3 align-middle text-lg">7</td>
-                        <td class="py-2 px-2">
-                           <div class="flex items-center">
-                              <div class="flex-shrink-0 h-10 w-10">
-                                 <img
-                                    src="https://i.seadn.io/gcs/files/8604de2d9aaec98dd389e3af1b1a14b6.gif?auto=format&dpr=1&w=136&h=136&fr=1"
-                                    alt="World of Women" class="h-10 w-10 rounded-full object-cover">
+                        <tr class="transition duration-150">
+                           <td class="py-2 px-3 align-middle text-lg">7</td>
+                           <td class="py-2 px-2">
+                              <div class="flex items-center">
+                                 <div class="flex-shrink-0 h-10 w-10">
+                                    <img
+                                       src="https://i.seadn.io/gcs/files/8604de2d9aaec98dd389e3af1b1a14b6.gif?auto=format&dpr=1&w=136&h=136&fr=1"
+                                       alt="World of Women" class="h-10 w-10 rounded-full object-cover">
+                                 </div>
+                                 <div class="ml-4 flex items-center">
+                                    <div class="text-lg font-medium text-gray-900">World of Women</div>
+                                 </div>
                               </div>
-                              <div class="ml-4 flex items-center">
-                                 <div class="text-lg font-medium text-gray-50">World of Women</div>
-                              </div>
-                           </div>
-                        </td>
-                        <td class="py-2 px-2 align-middle text-lg">1.5 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">32 ETH</td>
-                        <td class="py-2 px-2 align-middle text-lg">
-                           <div id="area-chart7" class="area-chart"></div>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
+                           </td>
+                           <td class="py-2 px-2 align-middle text-lg">1.5 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">32 ETH</td>
+                           <td class="py-2 px-2 align-middle text-lg">
+                              <div id="area-chart7" class="area-chart"></div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
          </div>
-      </div>
+      </dic>
    </section>
    <!-- TRENDING COLLECTIONS SECTION ENDED -->
 
