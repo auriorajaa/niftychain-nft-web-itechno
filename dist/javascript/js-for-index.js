@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-
    // Menambahkan properti CSS custom '--i' pada elemen dengan kelas 'letter'
    document.querySelectorAll('.letter').forEach((letter, index) => {
       letter.style.setProperty('--i', index);
@@ -167,7 +165,7 @@ VANTA.BIRDS({
    separation: 50.00,
    alignment: 20.00,
    cohesion: 20.00,
-   quantity: 3.00  // Jumlah burung, sesuaikan sesuai kebutuhan
+   quantity: 3.00  // Jumlah burung
 });
 
 // Trending Collections Section - Clouds effect

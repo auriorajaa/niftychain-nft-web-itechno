@@ -91,61 +91,90 @@
    <meta property="og:site_name" content="NiftyChain">
 
    <style>
+      /* Mengatur elemen yang menggunakan atribut [v-cloak] untuk tidak ditampilkan 
+   hingga Vue.js menyelesaikan proses rendering */
       [v-cloak]>* {
          display: none;
+         /* Menyembunyikan semua elemen di dalam elemen dengan atribut [v-cloak] */
       }
 
       [v-cloak]::before {
          content: "loading...";
+         /* Menampilkan teks "loading..." sebagai konten placeholder 
+                              selama proses rendering */
       }
 
+      /* Mengatur latar belakang halaman dengan gradasi warna dan animasi */
       body {
          background: linear-gradient(135deg, #A374D5 25%, #6E57C9 50%, #5145C6 75%);
+         /* Gradasi warna latar belakang dengan sudut 135 derajat dan 3 warna berbeda */
          background-size: 400% 400%;
+         /* Menyesuaikan ukuran latar belakang gradasi */
          animation: gradientAnimation 15s ease infinite;
+         /* Menambahkan animasi gradasi latar belakang */
       }
 
+      /* Mendefinisikan animasi untuk latar belakang gradasi */
       @keyframes gradientAnimation {
          0% {
             background-position: 0% 50%;
+            /* Posisi latar belakang pada awal animasi */
          }
 
          50% {
             background-position: 100% 50%;
+            /* Posisi latar belakang di tengah animasi */
          }
 
          100% {
             background-position: 0% 50%;
+            /* Posisi latar belakang pada akhir animasi */
          }
       }
 
+      /* Mengatur efek fokus untuk elemen dengan kelas .focus-ring */
       .focus-ring {
          box-shadow: 0 0 0 3px #A374D5;
+         /* Menambahkan bayangan sekitar elemen dengan warna khusus saat fokus */
       }
 
+      /* Mengatur gaya tombol khusus dengan kelas .button-custom */
       .button-custom {
          background-color: #A374D5;
+         /* Warna latar belakang tombol */
          border: none;
+         /* Menghilangkan border default tombol */
          color: white;
+         /* Warna teks tombol */
          font-weight: bold;
+         /* Menebalkan teks tombol */
          padding: 0.5rem 1rem;
+         /* Menambahkan padding pada tombol */
          transition: background-color 0.3s, transform 0.3s;
+         /* Transisi halus untuk perubahan warna dan transformasi */
       }
 
+      /* Mengatur efek hover untuk tombol khusus */
       .button-custom:hover {
          background-color: #8C3F92;
+         /* Mengubah warna latar belakang tombol saat di-hover */
          transform: scale(1.05);
+         /* Memperbesar tombol sedikit saat di-hover */
       }
 
+      /* Mengatur efek fokus untuk tombol khusus */
       .button-custom:focus {
          outline: none;
+         /* Menghilangkan outline default pada tombol saat fokus */
          box-shadow: 0 0 0 3px #A374D5;
+         /* Menambahkan bayangan sekitar tombol dengan warna khusus saat fokus */
       }
    </style>
 </head>
 
 <body>
 
+   <!-- MAIN SECTION FOR SALE NFT STARTED -->
    <div id="app" v-cloak>
       <!-- Upload Container -->
       <div class="container mx-auto px-4 py-12 font-englebert">
@@ -211,56 +240,14 @@
                   </button>
                </div>
             </form>
-
          </div>
       </div>
    </div>
+   <!-- MAIN SECTION FOR SALE NFT ENDED -->
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-   <script>
-      AOS.init({
-         duration: 1200,
-      });
-
-      new Vue({
-         el: '#app',
-         data: {
-            title: '',
-            description: '',
-            price: '',
-            preview: null,
-            creator: ''
-         },
-         methods: {
-            onFileChange(e) {
-               const file = e.target.files[0];
-               if (file) {
-                  const fileType = file.type.split('/')[0];
-                  this.preview = {
-                     url: URL.createObjectURL(file),
-                     type: fileType
-                  };
-               } else {
-                  this.preview = null;
-               }
-            },
-            viewPDF(url) {
-               window.open(url, '_blank');
-            },
-            playAudio(url) {
-               const audio = new Audio(url);
-               audio.play();
-            },
-            submitForm() {
-               // Logic to handle the form submission, e.g., upload the data to a server
-               alert('NFT Uploaded!');
-            }
-         }
-      });
-   </script>
-
+   <script src="/dist/javascript/js-for-sell-nft.js"></script>
    <script src="/dist/javascript/js-for-index.js"></script>
-
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>

@@ -94,36 +94,45 @@
    <style>
       [v-cloak] {
          display: none;
+         /* Sembunyikan elemen dengan atribut v-cloak hingga Vue selesai memuat */
       }
 
       .nft-card {
          transition: transform 0.3s ease-in-out;
+         /* Animasi transisi untuk perubahan transformasi */
       }
 
       .nft-card:hover {
          transform: translateY(-5px);
+         /* Efek hover untuk menggeser kartu NFT ke atas */
       }
 
       .darken-image {
          filter: brightness(50%);
+         /* Menggelapkan gambar dengan menurunkan kecerahan */
       }
 
       .absolute.inset-0 {
          position: absolute;
+         /* Posisi absolut untuk elemen ini */
          top: 0;
          right: 0;
          bottom: 0;
          left: 0;
+         /* Menempatkan elemen di seluruh area kontainer */
       }
 
       .overflow-y-auto {
          overflow-y: auto;
+         /* Menambahkan scrollbar vertikal jika konten melebihi batas elemen */
       }
 
       .max-h-screen {
          max-height: 90vh;
+         /* Membatasi tinggi elemen hingga 90% dari tinggi viewport */
       }
    </style>
+
 </head>
 
 <body class="bg-gray-100">
@@ -193,6 +202,7 @@
    </nav>
    <!-- NAVBAR SECTION ENDED -->
 
+   <!-- PROFILE SECTION STARTED -->
    <div class="font-englebert" id="app" v-cloak>
       <!-- Hero Section with Parallax -->
       <div class="relative h-screen overflow-hidden font-englebert" id="scene">
@@ -321,7 +331,7 @@
 
       <!-- Sell NFT Modal -->
       <div v-if="sellNFT" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-         <div class="bg-white rounded-lg p-6 max-w-lg w-full glassmorphism animate__animated animate__zoomIn">
+         <div class="bg-white p-6 max-w-lg w-full glassmorphism animate__animated animate__zoomIn">
             <h2 class="text-2xl font-bold mb-4">Sell {{ sellNFT.name }}</h2>
             <form @submit.prevent="submitSellForm">
                <div class="mb-4">
@@ -344,6 +354,7 @@
          </div>
       </div>
    </div>
+   <!-- PROFILE SECTION ENDED -->
 
    <!-- FOOTER SECTION STARTED -->
    <footer class="bg-gray-100 font-englebert" aria-labelledby="footer-heading">
@@ -477,95 +488,7 @@
    </footer>
    <!-- FOOTER SECTION ENDED -->
 
-   <script>
-      new Vue({
-         el: '#app',
-         data() {
-            return {
-               user: {
-                  name: 'Mr.0x',
-                  address: '0x1234567890abcdef',
-                  bio: 'NFT Collector and Artist',
-                  profilePicUrl: 'https://fiverrbox.com/wp-content/uploads/2021/12/nft-art.jpg-4-68aedf09.jpg',
-                  bannerUrl: 'https://via.placeholder.com/1500x400',
-                  socials: [
-                     { name: 'twitter', url: 'https://twitter.com' },
-                     { name: 'instagram', url: 'https://instagram.com' }
-                  ]
-               },
-               userStats: [
-                  { name: 'NFTs Owned', value: 12 },
-                  { name: 'Collections', value: 3 },
-                  { name: 'Followers', value: 256 },
-                  { name: 'Following', value: 150 }
-               ],
-               nfts: [
-                  { id: 1, name: 'v1 PUNK #8421', price: 0.5, imageUrl: 'https://i.seadn.io/s/raw/files/45949d1a4a886613c12a6a77415650ae.png?auto=format&dpr=1&w=384', description: 'V1PUNK. PUNK IS DEAD NFT', traits: [{ name: 'Rarity', value: 'Rare' }] },
-                  { id: 2, name: 'Lil Pudgy #16852', price: 1.2, imageUrl: 'https://i.seadn.io/s/raw/files/f8daf6b424572e7cf293438ee0cf7d83.png?auto=format&dpr=1&w=384', description: 'Lil pudgys, the penguins', traits: [{ name: 'Rarity', value: 'Epic' }] },
-                  { id: 3, name: 'Mr. DOB', price: 88.8, imageUrl: 'https://i.seadn.io/s/raw/files/46ba533a35bcfca33388fcfae96e7e2a.jpg?auto=format&dpr=1&w=384', description: 'A set of 40 unique companion pets with special powers', traits: [{ name: 'Rarity', value: 'Super Rare' }] },
-                  { id: 4, name: 'Kanpai Pandas', price: 0.98775, imageUrl: 'https://i.seadn.io/s/raw/files/7d88ebbfee0a9676d70afa1220f465cd.png?auto=format&dpr=1&w=384', description: 'Recognizable brand and a community of rabid “sophisticated degenerates”', traits: [{ name: 'Rarity', value: 'Epic' }] }
-               ],
-               sortBy: 'newest',
-               searchQuery: '',
-               selectedNFT: null,
-               sellNFT: null,
-               sellPrice: 0,
-               sellDuration: 7,
-               hasMoreNFTs: true
-            };
-         },
-         computed: {
-            filteredNFTs() {
-               let sortedNFTs = [...this.nfts];
-               if (this.sortBy === 'newest') {
-                  sortedNFTs.sort((a, b) => b.id - a.id);
-               } else if (this.sortBy === 'oldest') {
-                  sortedNFTs.sort((a, b) => a.id - b.id);
-               } else if (this.sortBy === 'highest_price') {
-                  sortedNFTs.sort((a, b) => b.price - a.price);
-               } else if (this.sortBy === 'lowest_price') {
-                  sortedNFTs.sort((a, b) => a.price - b.price);
-               }
-
-               if (this.searchQuery) {
-                  return sortedNFTs.filter(nft => nft.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
-               }
-               return sortedNFTs;
-            }
-         },
-         methods: {
-            shortenAddress(address) {
-               return `${address.slice(0, 6)}...${address.slice(-4)}`;
-            },
-            exploreNFTs() {
-            },
-            editProfile() {
-            },
-            showNFTDetails(nft) {
-               this.selectedNFT = nft;
-            },
-            closeNFTDetails() {
-               this.selectedNFT = null;
-            },
-            openSellModal(nft) {
-               this.sellNFT = nft;
-            },
-            closeSellModal() {
-               this.sellNFT = null;
-            },
-            submitSellForm() {
-               this.closeSellModal();
-            },
-            loadMoreNFTs() {
-            }
-         },
-         mounted() {
-            AOS.init(); // Initialize AOS
-         }
-      });
-   </script>
-
-
+   <script src="/dist/javascript/js-for-profile.js"></script>
    <script src="/dist/javascript/js-for-index.js"></script>
 
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
