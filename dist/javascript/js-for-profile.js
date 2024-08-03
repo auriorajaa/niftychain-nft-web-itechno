@@ -8,7 +8,7 @@ new Vue({
             name: 'Mr.0x', // Nama pengguna
             address: '0x1234567890abcdef', // Alamat pengguna (misalnya, alamat dompet kripto)
             bio: 'NFT Collector and Artist', // Biografi pengguna
-            profilePicUrl: 'https://fiverrbox.com/wp-content/uploads/2021/12/nft-art.jpg-4-68aedf09.jpg', // URL gambar profil pengguna
+            profilePicUrl: 'https://i.seadn.io/s/raw/files/39a708765dded79aa2429d2d5e2e0de8.gif?auto=format&dpr=1&w=256', // URL gambar profil pengguna
             bannerUrl: 'https://via.placeholder.com/1500x400', // URL gambar banner profil pengguna
             socials: [
                { name: 'twitter', url: 'https://twitter.com' }, // Akun Twitter pengguna
