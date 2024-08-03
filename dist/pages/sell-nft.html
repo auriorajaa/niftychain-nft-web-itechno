@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>NiftyChain - Gettin' Nifty with It</title>
+
+   <!-- Favicon -->
+   <link rel="icon" href="/src/image/happy.jpg" type="image/x-icon">
+
+   <!-- Meta Tags for SEO -->
+   <meta name="description"
+      content="NiftyChain is your ultimate NFT marketplace. Discover, buy, and sell unique digital assets seamlessly. Created by Aurio Rajaa and Haikal Afifsyah.">
+   <meta name="keywords"
+      content="NFT, NFT Marketplace, Digital Assets, Blockchain, NiftyChain, Aurio Rajaa, Haikal Afifsyah">
+   <meta name="author" content="Aurio Rajaa, Haikal Afifsyah">
+
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://niftychain-nft-web-itechno.vercel.app/">
+   <meta property="og:title" content="NiftyChain - Gettin' Nifty with It">
+   <meta property="og:description"
+      content="NiftyChain is your ultimate NFT marketplace. Discover, buy, and sell unique digital assets seamlessly. Created by Aurio Rajaa and Haikal Afifsyah.">
+   <meta property="og:image" content="https://niftychain-nft-web-itechno.vercel.app/src/image/og-image.jpg">
+
+   <!-- Twitter -->
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://niftychain-nft-web-itechno.vercel.app/">
+   <meta property="twitter:title" content="NiftyChain - Gettin' Nifty with It">
+   <meta property="twitter:description"
+      content="NiftyChain is your ultimate NFT marketplace. Discover, buy, and sell unique digital assets seamlessly. Created by Aurio Rajaa and Haikal Afifsyah.">
+   <meta property="twitter:image" content="https://niftychain-nft-web-itechno.vercel.app/src/image/twitter-image.jpg">
+
+   <!-- Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css">
+   <link rel="stylesheet" href="/node_modules/flowbite/dist/flowbite.min.css">
+   <link rel="stylesheet" href="/dist/output.css">
+   <link rel="stylesheet" href="/dist/input.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+   <!-- Scripts -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <!-- Additional SEO Meta Tags -->
+   <meta name="robots" content="index, follow">
+   <meta name="language" content="English">
+   <meta name="revisit-after" content="7 days">
+   <meta name="distribution" content="global">
+   <meta name="rating" content="general">
+
+   <!-- Structured Data Markup for Rich Snippets -->
+   <script type="application/ld+json">
+                  {
+                     "@context": "https://schema.org",
+                     "@type": "WebSite",
+                     "url": "https://niftychain-nft-web-itechno.vercel.app/",
+                     "name": "NiftyChain",
+                     "description": "NiftyChain is your ultimate NFT marketplace. Discover, buy, and sell unique digital assets seamlessly. Created by Aurio Rajaa and Haikal Afifsyah.",
+                     "creator": [
+                        {
+                           "@type": "Person",
+                           "name": "Aurio Rajaa"
+                        },
+                        {
+                           "@type": "Person",
+                           "name": "Haikal Afifsyah"
+                        }
+                     ],
+                     "image": "https://niftychain-nft-web-itechno.vercel.app/src/image/og-image.jpg"
+                  }
+                  </script>
+
+   <!-- Canonical Link -->
+   <link rel="canonical" href="https://niftychain-nft-web-itechno.vercel.app/">
+
+   <!-- Other Metadata -->
+   <meta property="og:locale" content="en_US">
+   <meta property="og:site_name" content="NiftyChain">
+
+   <style>
+      [v-cloak]>* {
+         display: none;
+      }
+
+      [v-cloak]::before {
+         content: "loading...";
+      }
+
+      body {
+         background: linear-gradient(135deg, #A374D5 25%, #6E57C9 50%, #5145C6 75%);
+         background-size: 400% 400%;
+         animation: gradientAnimation 15s ease infinite;
+      }
+
+      @keyframes gradientAnimation {
+         0% {
+            background-position: 0% 50%;
+         }
+
+         50% {
+            background-position: 100% 50%;
+         }
+
+         100% {
+            background-position: 0% 50%;
+         }
+      }
+
+      .focus-ring {
+         box-shadow: 0 0 0 3px #A374D5;
+      }
+
+      .button-custom {
+         background-color: #A374D5;
+         border: none;
+         color: white;
+         font-weight: bold;
+         padding: 0.5rem 1rem;
+         transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .button-custom:hover {
+         background-color: #8C3F92;
+         transform: scale(1.05);
+      }
+
+      .button-custom:focus {
+         outline: none;
+         box-shadow: 0 0 0 3px #A374D5;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div id="app" v-cloak>
+      <!-- Upload Container -->
+      <div class="container mx-auto px-4 py-12 font-englebert">
+         <div class="max-w-2xl mx-auto bg-white shadow-lg p-8" data-aos="fade-up">
+            <h2 class="text-5xl font-bold text-center mb-6">Upload Your NFT</h2>
+            <form @submit.prevent="submitForm" class="space-y-6">
+               <div>
+                  <label class="block text-gray-700 text-sm font-bold mb-2" for="file">
+                     File
+                  </label>
+                  <input type="file" @change="onFileChange" required
+                     class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100 focus:ring focus:ring-violet-300">
+               </div>
+               <div v-if="preview" class="mb-4">
+                  <label class="block text-gray-700 text-sm font-bold mb-2">Preview</label>
+                  <div v-if="preview.type === 'image'" class="relative">
+                     <img :src="preview.url" alt="Image Preview" class="w-full h-auto shadow">
+                  </div>
+                  <div v-else-if="preview.type === 'pdf'" class="relative">
+                     <iframe :src="preview.url" class="w-full h-96 border" frameborder="0"></iframe>
+                     <button @click="viewPDF(preview.url)" class="button-custom mt-2">View PDF</button>
+                  </div>
+                  <div v-else-if="preview.type === 'audio'" class="relative">
+                     <audio :src="preview.url" controls class="w-full h-16 border"></audio>
+                     <button @click="playAudio(preview.url)" class="button-custom mt-2">Play Audio</button>
+                  </div>
+               </div>
+               <div>
+                  <label class="block text-gray-700 text-sm font-bold mb-2" for="title">
+                     Title
+                  </label>
+                  <input type="text" v-model="title" required
+                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-violet-300"
+                     placeholder="NFT Title">
+               </div>
+               <div>
+                  <label class="block text-gray-700 text-sm font-bold mb-2" for="description">
+                     Description
+                  </label>
+                  <textarea v-model="description" required
+                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-violet-300"
+                     rows="4" placeholder="NFT Description"></textarea>
+               </div>
+               <div>
+                  <label class="block text-gray-700 text-sm font-bold mb-2" for="creator">
+                     Creator
+                  </label>
+                  <input type="text" v-model="creator" required
+                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-violet-300"
+                     placeholder="Creator's Name">
+               </div>
+               <div>
+                  <label class="block text-gray-700 text-sm font-bold mb-2" for="price">
+                     Price (ETH)
+                  </label>
+                  <input type="number" v-model="price" required min="0" step="0.01"
+                     class="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:ring-violet-300"
+                     placeholder="NFT Price">
+               </div>
+               <div class="flex items-center justify-between">
+                  <button type="submit" class="button-custom">
+                     Upload
+                  </button>
+               </div>
+            </form>
+
+         </div>
+      </div>
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script>
+      AOS.init({
+         duration: 1200,
+      });
+
+      new Vue({
+         el: '#app',
+         data: {
+            title: '',
+            description: '',
+            price: '',
+            preview: null,
+            creator: ''
+         },
+         methods: {
+            onFileChange(e) {
+               const file = e.target.files[0];
+               if (file) {
+                  const fileType = file.type.split('/')[0];
+                  this.preview = {
+                     url: URL.createObjectURL(file),
+                     type: fileType
+                  };
+               } else {
+                  this.preview = null;
+               }
+            },
+            viewPDF(url) {
+               window.open(url, '_blank');
+            },
+            playAudio(url) {
+               const audio = new Audio(url);
+               audio.play();
+            },
+            submitForm() {
+               // Logic to handle the form submission, e.g., upload the data to a server
+               alert('NFT Uploaded!');
+            }
+         }
+      });
+   </script>
+
+   <script src="/dist/javascript/js-for-index.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+   <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
